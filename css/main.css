@@ -1,0 +1,46 @@
+@import url(./bases/reset.css);
+@import url(./bases/variables.css);
+@import url(./bases/button.css);
+@import url(./bases/input.css);
+@import url(./layout/header.css);
+@import url(./layout/menu.css);
+@import url(./layout/container.css);
+@import url(./layout/main.css);
+@import url(./layout/sidebar.css);
+@import url(./layout/content.css);
+@import url(./bases/icon.css);
+@import url(./bases/table.css);
+/* Sử dụng chung*/
+/* Text */
+.heading {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+}
+.title {
+  color: var(--title-color);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+}
+.title--small {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+.caption {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 17px;
+}
+.subheader {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+}
+.text-menu {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+}
+/*  */
