@@ -8,8 +8,30 @@
     background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -424px -86px;
 }
 
-.header-branch-icon {
+.branch-icon {
     background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -80px -360px;
+    transform: rotate(90deg);
+    width: 14px;
+    height: 14px;
+}
+
+.notify-icon {
+    background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -788px -30px;
+    width: 14px;
+    height: 14px;
+}
+
+
+.header-user-ava-img {
+	background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -352px -894px;
+	width: 32px;
+	height: 32px;
+}
+
+.dropdown-icon {
+    background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -944px -360px;
+    width: 14px;
+    height: 14px;
 }
 
 .search-icon {
@@ -20,4 +42,79 @@
 
 .menu-icon {
 	background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -844px -30px;
+}
+
+/* sidebar icon */
+
+.sidebar-dashboard-icon {
+	background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -30px -1628px;
+}
+
+
+.sidebar-cash-icon {
+    background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -73px -1585px;
+}
+
+
+.sidebar-bank-icon {
+	background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -117px -1628px;
+}
+
+
+.sidebar-buy-icon {
+	background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -161px -1628px;
+}
+
+
+.sidebar-sale-icon {
+	background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -204px -1628px;
+}
+
+
+.sidebar-invoice-icon {
+	background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -249px -1628px;
+}
+
+.sidebar-stock-icon {
+	background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -291px -1628px;
+}
+
+.sidebar-tools-icon {
+	background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -336px -1628px;;
+}
+
+.sidebar-fixed-assets-icon {
+	background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -378px -1630px;
+}
+
+/* .sidebar-salary-icon {
+	background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -467px -1659px;
+} */
+
+.sidebar-tax-icon {
+	background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -423px -1630px;
+}
+
+.sidebar-price-icon {
+	background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -467px -1628px;
+}
+
+/* .sidebar-loans-icon {
+	background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -636px -1661px;
+} */
+
+.sidebar-general-icon {
+	background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -510px -1628px;
+}
+
+.sidebar-budget-icon {
+	background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -378px -1659px;
+}
+
+.sidebar-report-icon {
+	background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -547px -1628px;
+}
+
+.sidebar-finance-icon {
+	background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -204px -1664px;
 }
