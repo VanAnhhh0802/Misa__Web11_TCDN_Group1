@@ -1,0 +1,23 @@
+.refresh-icon {
+    background-image: url(../../assets/img/Sprites.64af8f61.svg);
+    background-repeat: no-repeat;
+    background-position: -414px -192px;
+}
+
+.toggle-icon {
+    background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -424px -86px;
+}
+
+.header-branch-icon {
+    background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -80px -360px;
+}
+
+.search-icon {
+    background-image: url(../../assets/icons/search.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 8px) center;
+}
+
+.menu-icon {
+	background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -844px -30px;
+}

@@ -1,0 +1,27 @@
+.combobox {
+    height: 36px;
+    width: 150px;
+    display: flex;
+    border-radius: 4px;
+    border: 1px solid #E6E6E6;
+}
+.combobox .m-input {
+    height: 34px;
+    border-radius: 4px 0 0 4px;
+    border: 0;
+    border-right: 1px solid #E6E6E6;
+    
+}
+.m-combobox-select {
+    border: none;
+    width: 40px;
+    outline: none;
+    padding: 0 12px;
+    border-radius: 0 4px 4px 0;
+
+}
+
+m.m-combo-box option[hidden] {
+    font-size: 11px;
+    color: #BBBBBB;
+}

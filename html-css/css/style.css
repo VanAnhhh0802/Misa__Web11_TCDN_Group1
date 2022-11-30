@@ -1,0 +1,53 @@
+
+
+@import url(./components/icon.css);
+@import url(./components/button.css);
+@import url(./components/comboBox.css);
+@import url(./components/input.css);
+@import url(./components/employee.css);
+
+@font-face {
+    font-family: notosans;
+    src: url(../assets/fonts/notosans-regular.2cb88a13.woff2);
+}
+@font-face {
+    font-family: notosans Italic;
+    src: url(../assets/fonts/notosans-italic.1c1aaac9.woff2);
+}
+@font-face {
+    font-family: notosans Bold;
+    src: url(../assets/fonts/notosans-bold.3ede5aff.woff2);
+}
+@font-face {
+    font-family: notosans Semibold;
+    src: url(../assets/fonts/notosans-semibold.df3e6dc4.woff2);
+}
+
+:root {
+    /* color */
+    /* button */
+    --primary-color: #1e90ff;
+    --hover-button-color: #ffffff;
+    --active-button-color: #ffffff;
+    --disable-button-color: #ffffff;
+    /* input */
+    --hint-text-color: #ffffff;
+    --border-color:#ffffff;
+    
+}
+
+* {
+    box-sizing: border-box;
+    font-family: notosans;
+    font-size: 13px;
+    margin: 0;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.m-row {
+    width: 100%;
+    margin-top: 8px;
+}
