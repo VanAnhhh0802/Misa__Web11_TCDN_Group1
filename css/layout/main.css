@@ -1,0 +1,60 @@
+.main {
+  width: 100%;
+}
+.main__header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--height-header);
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main__header--left {
+  display: flex;
+  align-items: center;
+}
+.header__icon {
+  margin: 0 24px;
+  background-position: -843px -30px;
+}
+.header__branch {
+}
+.header__branch-drop-down {
+  transform: rotate(90deg);
+  background-position: -75px -355px;
+}
+.main__header--right {
+  display: flex;
+  align-items: center;
+}
+.header__notify {
+  background-position: -788px -30px;
+  cursor: pointer;
+}
+.header__notify :hover {
+  background-color: var(--primary-color);
+}
+.header__user {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 24px;
+}
+.user__avt {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-position: -608px -1140px;
+}
+.user__name {
+  margin: 0 8px;
+}
+.user__icon-drop-down {
+  background-position: -1076px -28px;
+}

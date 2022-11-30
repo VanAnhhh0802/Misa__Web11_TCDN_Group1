@@ -1,5 +1,8 @@
+/*  */
 @import url(./bases/reset.css);
+@import url(./pages/employee.css);
 @import url(./bases/variables.css);
+@import url(./bases/icon.css);
 @import url(./bases/button.css);
 @import url(./bases/input.css);
 @import url(./layout/header.css);
@@ -8,7 +11,6 @@
 @import url(./layout/main.css);
 @import url(./layout/sidebar.css);
 @import url(./layout/content.css);
-@import url(./bases/icon.css);
 @import url(./bases/table.css);
 /* Sử dụng chung*/
 /* Text */
@@ -42,5 +44,18 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 18px;
+}
+
+.m-12 {
+  margin: 0 12px;
+}
+.m-16 {
+  margin: 0 16px;
+}
+.w-h-24 {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  min-height: 24px;
 }
 /*  */

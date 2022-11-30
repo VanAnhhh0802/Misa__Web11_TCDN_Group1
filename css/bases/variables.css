@@ -6,6 +6,7 @@
   --disable-color: #9e9e9e;
   --border-color: #e0e0e0;
   --background-color: #f7f7f7;
+  --active-color: #2ca01c;
   /* Nền tối */
   --dark-title-color: #ffffff;
   --dark-primary-color: #bddee3;
@@ -13,4 +14,6 @@
   --dark-disable-color: #4b5b73;
   --dark-border-color: #334560;
   --dark-background-color: #182d4b;
+  /* height header */
+  --height-header: 56px;
 }
