@@ -1,4 +1,8 @@
 :root {
+  --main-color: #50b83c;
+  --light-color:#10250C;
+  --secondary-color: #73C663;
+
   /* Nền sáng */
   --title-color: #000000;
   --primary-color: #212121;
@@ -6,7 +10,6 @@
   --disable-color: #9e9e9e;
   --border-color: #e0e0e0;
   --background-color: #f7f7f7;
-  --active-color: #2ca01c;
   /* Nền tối */
   --dark-title-color: #ffffff;
   --dark-primary-color: #bddee3;

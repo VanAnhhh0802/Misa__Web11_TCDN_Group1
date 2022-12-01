@@ -133,11 +133,59 @@
         </div>
         <div class="content">
           <div class="content__toolbar">
-            <div class="title content__title">Nhân viên</div>
-            <button id="btn--add" class="btn">Thêm mới nhân viên</button>
+            <div class="content__title">Nhân viên</div>
+            <button id="btn--add" class="btn btn--primary">
+              Thêm mới nhân viên
+            </button>
           </div>
           <div class="content__list">
-            <div class="list__table"></div>
+            <div class="list__toolbar">
+              <input type="text" class="input list__search" />
+              <button id="list__reload"></button>
+            </div>
+            <div class="list__table">
+              <table border="1" border-collapse="collapse">
+                <thead>
+                  <tr>
+                    <th>
+                      <input type="checkbox" name="" id="" />
+                    </th>
+                    <th>MÃ NHÂN VIÊN</th>
+                    <th>TÊN NHÂN VIÊN</th>
+                    <th>GIỚI TÍNH</th>
+                    <th>NGÀY SINH</th>
+                    <th>SỐ CMTND</th>
+                    <th>CHỨC DANH</th>
+                    <th>TÊN ĐƠN VỊ</th>
+                    <th>SỐ TÀI KHOẢN</th>
+                    <th>TÊN NGÂN HÀNG</th>
+                    <th>CHI NHANH TÀI KHOẢN NGÂN HÀNG</th>
+                    <th>CHỨC NĂNG</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><input type="checkbox" name="" id="" /></td>
+                    <td>00012</td>
+                    <td>Nguyễn Văn Liệt</td>
+                    <td>Nam</td>
+                    <td>31/12/2001</td>
+                    <td>2354656</td>
+                    <td>Trưởng nhóm</td>
+                    <td>Xay - Keo phối trộn</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                      <div class="function">
+                        <div class="function__title">Sửa</div>
+                        <button class="btn function__btn"></button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
             <div class="list__pagination"></div>
           </div>
         </div>

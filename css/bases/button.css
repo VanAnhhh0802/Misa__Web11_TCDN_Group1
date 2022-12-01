@@ -2,7 +2,6 @@
   min-width: 80px;
   height: 36px;
   border-radius: 4px;
-  background: #50b83c;
   font-weight: 500;
   font-size: 14px;
   text-align: center;
@@ -12,6 +11,9 @@
   border: none;
   cursor: pointer;
   padding: 0 16px;
+}
+.btn--primary {
+  background: var(--main-color);
 }
 /* btn add */
 #btn--add {
