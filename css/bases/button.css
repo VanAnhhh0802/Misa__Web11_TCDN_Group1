@@ -11,10 +11,24 @@
   border: none;
   cursor: pointer;
   padding: 0 16px;
+  font-family: "Roboto";
+}
+.btn--small {
+  min-width: 36px;
+  padding: 0;
 }
 .btn--primary {
   background: var(--main-color);
 }
+.btn--primary:hover {
+  background-color: var(--background-hover-color);
+  transition: all 0.2s linear;
+}
 /* btn add */
-#btn--add {
+.btn__search {
+  background-position: -1035px -83px;
+}
+#btn__reload {
+  margin-left: 8px;
+  background-position: -1018px -23px;
 }

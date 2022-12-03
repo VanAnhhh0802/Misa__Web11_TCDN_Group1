@@ -1,0 +1,24 @@
+.input {
+  height: 36px;
+  min-width: 260px;
+  padding: 8px 8px 8px 12px;
+  box-sizing: border-box;
+  font-size: 13px;
+  outline: none;
+  border: 1px solid #ccc;
+  border: none;
+  font-family: "Roboto";
+}
+label ~ * {
+  margin-top: 8px;
+}
+/* input search */
+
+/* company input */
+.company__input {
+  border-right: 1px solid var(--border-color);
+  position: relative;
+}
+.company__input:focus ~ .sub-list-company {
+  display: block;
+}

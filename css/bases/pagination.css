@@ -1,0 +1,28 @@
+.content__footer {
+  padding: 0 16px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--background-table-color);
+}
+.record-in-page {
+  padding: 0 16px 0 0;
+  cursor: pointer;
+}
+
+.pagination-icon {
+  background-position: -1124px -358px;
+}
+.page__index {
+  margin: 0 16px;
+}
+.page__prev {
+  margin-right: 16px;
+  background-position: -30px -356px;
+  cursor: pointer;
+}
+.page__next {
+  background-position: -75px -356px;
+  cursor: pointer;
+}

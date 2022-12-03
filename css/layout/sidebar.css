@@ -2,15 +2,20 @@
   position: relative;
   width: 200px;
   box-sizing: border-box;
-  background-color: var(--primary-color);
+  background-color: var(--background-menu-color);
   overflow-y: auto;
 }
 .sidebar__header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   align-items: center;
   height: var(--height-header);
+  background-color: var(--background-menu-color);
   width: 100%;
-  color: #fff;
+  color: var(--sidebar-text-color);
 }
 .sidebar__option {
   background: url(../../assets/img/Sprites.64af8f61.svg) no-repeat -424px -89px;
@@ -39,51 +44,26 @@
 .sidebar__header > span {
   margin-left: 8px;
 }
-.sidebar__dashboard {
-  background-position: -33px -1630px;
+.sidebar__collapse {
+  position: sticky;
+  bottom: 0;
+  height: 44px;
+  border-top: 1px solid var(--border-color);
+  width: 100%;
+  color: #fff;
+  column-gap: 8px;
+  display: flex;
+  align-items: center;
+  background-color: var(--background-menu-color);
 }
-.sidebar__cash {
-  background-position: -73px -1628px;
+.sidebar__collapse--click {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  margin-left: 24px;
 }
-.sidebar__bank {
-  background-position: -117px -1628px;
-}
-.sidebar__purchase {
-  background-position: -161px -1628px;
-}
-.sidebar__sale {
-  background-position: -204px -1628px;
-}
-.sidebar__invoice {
-  background-position: -249px -1628px;
-}
-.sidebar__stock {
-  background-position: -291px -1628px;
-}
-.sidebar__tools {
-  background-position: -336px -1628px;
-}
-.sidebar__fixed-assets {
-  background-position: -378px -1630px;
-}
-.sidebar__tax {
-  background-position: -423px -1630px;
-}
-.sidebar__price {
-  background-position: -467px -1628px;
-}
-.sidebar__general {
-  background-position: -510px -1628px;
-}
-.sidebar__budget {
-  background-position: -378px -1659px;
-}
-.sidebar__report {
-  background-position: -547px -1628px;
-}
-.sidebar__finance {
-  background-position: -204px -1664px;
-}
+
 /* Tool Tip */
 a[data-c-tooltip] {
 }

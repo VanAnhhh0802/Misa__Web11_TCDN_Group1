@@ -5,13 +5,17 @@
 @import url(./bases/icon.css);
 @import url(./bases/button.css);
 @import url(./bases/input.css);
+@import url(./bases/combobox.css);
+@import url(./bases/subcombobox.css);
+@import url(./layout/container.css);
+@import url(./layout/sidebar.css);
+@import url(./layout/main.css);
 @import url(./layout/header.css);
 @import url(./layout/menu.css);
-@import url(./layout/container.css);
-@import url(./layout/main.css);
-@import url(./layout/sidebar.css);
+@import url(./layout/footer.css);
 @import url(./layout/content.css);
 @import url(./bases/table.css);
+@import url(./bases/pagination.css);
 /* Sử dụng chung*/
 /* Text */
 .heading {
@@ -58,4 +62,30 @@
   min-width: 24px;
   min-height: 24px;
 }
+.flex {
+  display: flex;
+  align-items: center;
+}
+.focus {
+  border: var(--main-color);
+}
+.text-align-right {
+  text-align: right;
+}
+.text-align-left {
+  text-align: left;
+}
+.text-align-center {
+  text-align: center;
+}
+.width-table-checkbox {
+  width: 50px;
+}
+.w-150 {
+  width: 150px;
+}
+.w-100 {
+  width: 100px;
+}
+
 /*  */

@@ -1,3 +1,72 @@
 .icon {
   background: url(../../assets/img/Sprites.64af8f61.svg) no-repeat;
 }
+/* header  */
+.header__icon {
+  margin: 0 24px;
+  background-position: -847px -30px;
+}
+.user__icon-drop-down {
+  background-position: -1076px -28px;
+}
+/* sidebar */
+
+/* Menu */
+.sidebar__dashboard {
+  background-position: -30px -1630px;
+}
+.sidebar__cash {
+  background-position: -73px -1628px;
+}
+.sidebar__bank {
+  background-position: -117px -1628px;
+}
+.sidebar__purchase {
+  background-position: -161px -1628px;
+}
+.sidebar__sale {
+  background-position: -204px -1628px;
+}
+.sidebar__invoice {
+  background-position: -249px -1628px;
+}
+.sidebar__stock {
+  background-position: -291px -1628px;
+}
+.sidebar__tools {
+  background-position: -336px -1628px;
+}
+.sidebar__fixed-assets {
+  background-position: -378px -1630px;
+}
+.sidebar__tax {
+  background-position: -423px -1630px;
+}
+.sidebar__price {
+  background-position: -467px -1628px;
+}
+.sidebar__general {
+  background-position: -510px -1628px;
+}
+.sidebar__budget {
+  background-position: -378px -1659px;
+}
+.sidebar__report {
+  background-position: -547px -1628px;
+}
+.sidebar__finance {
+  background-position: -204px -1664px;
+}
+.sidebar-collapse__icon {
+  background-position: -29px -356px;
+}
+/* Company  */
+.company__icon {
+  background-position: -1115px -361px;
+  width: 16px;
+  height: 16px;
+  padding: 0 12px;
+}
+.company__item-title-icon {
+  background-position: -1225px -363px;
+}

@@ -1,0 +1,28 @@
+/* Company */
+.sub-list-company {
+  display: none;
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  padding: 8px;
+  max-height: 308px;
+  overflow-y: auto;
+  top: calc(36px + 1px);
+  left: 0;
+  z-index: 99;
+}
+.company__item-title {
+  justify-content: space-between;
+  color: var(--main-color);
+}
+.company__item {
+  height: 36px;
+  border-radius: 4px;
+  padding-left: 8px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.company__item:hover {
+  background-color: rgba(80, 184, 60, 0.1);
+}

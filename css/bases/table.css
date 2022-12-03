@@ -1,0 +1,28 @@
+.list__table {
+  height: 100%;
+  overflow-y: auto;
+}
+tr,
+th,
+td {
+  height: 40px;
+  border-bottom: 1px solid var(--border-color);
+  box-sizing: border-box;
+}
+th {
+  background-color: var(--background-table-color);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  box-sizing: border-box;
+}
+td,
+th {
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+thead {
+  position: sticky;
+  top: 0;
+}
