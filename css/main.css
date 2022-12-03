@@ -16,6 +16,7 @@
 @import url(./layout/content.css);
 @import url(./bases/table.css);
 @import url(./bases/pagination.css);
+@import url(./bases/dialog.css);
 /* Sử dụng chung*/
 /* Text */
 .heading {

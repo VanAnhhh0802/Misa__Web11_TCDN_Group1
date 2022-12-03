@@ -70,3 +70,8 @@
 .company__item-title-icon {
   background-position: -1225px -363px;
 }
+/* Dialog */
+.dialog__header-icon {
+  background-position: -1171px -356px;
+  cursor: pointer;
+}

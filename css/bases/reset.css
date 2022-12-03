@@ -7,4 +7,5 @@ body {
   font-weight: 400;
   line-height: 18px;
   overflow: hidden;
+  color: var(--primary-text-color);
 }

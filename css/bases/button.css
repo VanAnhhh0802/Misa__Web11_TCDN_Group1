@@ -19,10 +19,21 @@
 }
 .btn--primary {
   background: var(--main-color);
+  order: 1;
 }
 .btn--primary:hover {
   background-color: var(--background-hover-color);
   transition: all 0.2s linear;
+}
+
+.btn--secondary {
+  order: 0;
+  color: var(--primary-text-color);
+  background-color: var(--background-btn-secondary);
+}
+.btn--error {
+  order: 1;
+  background-color: #de3617;
 }
 /* btn add */
 .btn__search {
