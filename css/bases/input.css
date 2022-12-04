@@ -16,6 +16,9 @@ input:focus {
 label ~ * {
   margin-top: 8px;
 }
+.no-border-focus:focus {
+  border: none;
+}
 /* input search */
 
 /* company input */

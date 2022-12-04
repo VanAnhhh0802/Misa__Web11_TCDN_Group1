@@ -161,20 +161,25 @@
             <!-- list header -->
             <div class="flex list__header">
               <div class="list-header--left">
-                <div class="flex list__toolbar">
+                <div id="" class="flex input__wrapper list__toolbar">
                   <input
                     type="text"
-                    class="input input-list__search"
+                    id="input-show "
+                    class="input no-border-focus input-list__search"
                     placeholder="Tìm theo mã, tên nhân viên"
                   />
                   <button class="btn icon btn--small btn__search"></button>
                 </div>
               </div>
               <div class="flex list-header--right">
-                <div class="flex list-header--chose-company">
+                <div
+                  id=""
+                  class="flex input__wrapper list-header--chose-company"
+                >
                   <input
                     type="text"
-                    class="combobox input company__input"
+                    id="input-show"
+                    class="combobox input no-border-focus company__input"
                     placeholder="Chọn công ty"
                   />
                   <div class="sub-list-company">
@@ -276,20 +281,56 @@
         </div>
       </div>
     </div>
-    <!--toast  -->
-    <div class="toast" hidden>
+    <!--toast success -->
+    <div id="toast__success" class="toast" hidden>
       <div class="flex toast__content">
-        <div class="flex toast--left">
-          <div class="icon w-h-24 toast-left-icon"></div>
+        <div class="icon w-h-24 toast-icon--success"></div>
+        <div class="flex toast__desc">
+          <span class="toast__desc--status toast-status--success"
+            >Thành công</span
+          >
+          Công việc đã bị xóa
+          <span class="toast__act"><u>Hoàn tác</u></span>
+        </div>
+        <div class="icon w-h-24 toast-right-icon"></div>
+      </div>
+    </div>
+    <!-- Toast error -->
+    <div id="toast__error" class="toast" hidden>
+      <div class="flex toast__content">
+        <div class="icon w-h-24 toast-icon--error"></div>
           <div class="toast__desc">
-            <span class="toast__desc--status">Thành công</span>
-            Công việc đã bị xóa
+            <span class="toast__desc--status toast-status--error">Lỗi!</span>
+            Không thể cập nhật được dữ liệu. Vui lòng kiểm tra lại kết nối 
+            internet.
+            <span class="toast__act"><u>Xem hướng dẫn</u></span>
           </div>
         </div>
-        <div class="flex oast--right">
-          <div class="toast__act"><u>Hoàn tác</u></div>
-          <div class="icon w-h-24 toast-right-icon"></div>
+        <div class="icon w-h-24 toast-right-icon"></div>
+      </div>
+    </div>
+    <!-- toast warring -->
+    <div id="toast__warring" class="toast" hidden>
+      <div class="flex toast__content">
+        <div class="icon w-h-24 toast-icon--warring"></div>
+          <div class="toast__desc">
+            <span class="toast__desc--status toast-status--warring">Cảnh báo!</span>
+            Dữ liệu của bạn đã bị thay đổi bởi người dùng khác
+          </div>
         </div>
+        <div class="icon w-h-24 toast-right-icon"></div>
+      </div>
+    </div>
+    <!-- toast infor -->
+    <div id="toast__infor" class="toast" hidden>
+      <div class="flex toast__content">
+        <div class="icon w-h-24 toast-icon--infor"></div>
+          <div class="toast__desc">
+            <span class="toast__desc--status toast-status--infor">Thông tin!</span>
+            Bạn nên đọc kỹ thông tin trước khi phê duyệt
+          </div>
+        </div>
+        <div class="icon w-h-24 toast-right-icon"></div>
       </div>
     </div>
     <!-- Form sign up  -->
@@ -338,5 +379,7 @@
         </form>
       </div>
     </div>
+    <script></script>
+    <script src="../js/app.js"></script>
   </body>
 </html>

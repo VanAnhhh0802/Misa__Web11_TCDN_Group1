@@ -76,9 +76,24 @@
   cursor: pointer;
 }
 /* toast */
-.toast-left-icon {
-  background-position: -844px -308px;
-}
 .toast-right-icon {
   background-position: -75px -307px;
+  margin-left: 16px;
+  cursor: pointer;
+}
+.toast-icon--success {
+  background-position: -844px -308px;
+  margin-right: 8px;
+}
+.toast-icon--error {
+  background-position: -792px -1152px;
+  margin-right: 8px;
+}
+.toast-icon--warring {
+  background-position: -538px -146px;
+  margin-right: 8px;
+}
+.toast-icon--infor {
+  background-position: -672px -462px;
+  margin-right: 8px;
 }
