@@ -1,0 +1,121 @@
+/* import file base css */
+@import url(./base/button.css);
+@import url(./base/combobox.css);
+@import url(./base/dropdown.css);
+@import url(./base/input.css);
+@import url(./base/loading.css);
+@import url(./base/icon.css);
+@import url(./base/checkbox.css);
+@import url(./base/radio.css);
+@import url(./base/dialog.css);
+
+
+/* import file layout css */
+@import url(./layout/paging.css);
+@import url(./layout/sidebar.css);
+@import url(./layout/table.css);
+@import url(./layout/navbar.css);
+@import url(./layout/content.css);
+@import url(./layout/main-content.css);
+@import url(./layout/tbody.css);
+@import url(./layout/popup.css);
+
+
+
+body {
+    margin: 0;
+    font-size: 13px;
+    overflow: hidden;
+    font-family: Notosans-Regular;
+
+}
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: inherit;
+    outline: none;
+    text-transform: none;
+    text-decoration: none;
+    overflow: inherit;
+
+}
+
+@font-face {
+    font-family: Notosans-Bold;
+    src: url(../assets/fonts/notosans-bold.3ede5aff.woff2);
+}
+
+@font-face {
+    font-family: Notosans-Italic;
+    src: url(../assets/fonts/notosans-italic.1c1aaac9.woff2);
+}
+
+@font-face {
+    font-family: Notosans-Regular;
+    src: url(../assets/fonts/notosans-regular.2cb88a13.woff2);
+}
+
+@font-face {
+    font-family: Notosans-Semibold;
+    src: url(../assets/fonts/notosans-semibold.df3e6dc4.woff2);
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #b8bcc3;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #888;
+}
+
+::-webkit-scrollbar-track-piece{
+    background-color: #f1f1f1;
+    width: 10px;
+}
+
+.m-container{
+    display: flex;
+    height: 100vh;
+}
+
+.m-mr-12 {
+    margin-right: 12px;
+}
+
+.m-flex {
+    display: flex;
+  }
+  
+  .m-flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .m-pr-6 {
+    padding-right: 6px;
+  }
+  
+  .m-pb-12 {
+    padding-bottom: 12px;
+  }
+  
+  .m-pb-24{
+    padding-bottom: 24px;
+  }
+   
+  .m-ml-8 {
+    margin-left: 8px;
+  }
+  

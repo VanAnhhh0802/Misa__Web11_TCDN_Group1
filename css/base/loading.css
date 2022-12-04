@@ -1,0 +1,30 @@
+.m-loading-svg {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: rotate(50% 50%);
+    border-radius: 50%;
+    box-sizing: border-box;
+    z-index: 9999;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.m-icon-loading {
+    background: url(../../assets/loading.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    animation: rotate 1s ease;
+}

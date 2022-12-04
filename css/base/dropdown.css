@@ -1,0 +1,37 @@
+.m-dropdown {
+    display: flex;
+    align-items: center;
+}
+
+.m-dropdown-type-feature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.m-dropdown>.m-dropdown-type-feature {
+    color: #0075c0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.m-dropdown-type-feature:focus .m-button-text {
+    outline: 1px solid #0075c0;
+}
+
+.m-dropdown-button-text {
+    padding: 6px 1px 6px 16px;
+}
+
+.m-dropdown-button-icon>.m-dropdown-button-text {
+    display: flex;
+    justify-content: center;
+}
+
+.m-dropdown-button-icon {
+    padding: 8px 10px;
+    width: 46px;
+}
+

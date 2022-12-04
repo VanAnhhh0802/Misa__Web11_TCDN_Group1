@@ -1,0 +1,77 @@
+.m-main-content {
+    background-color: #eceef1;
+    position: relative;
+    height: calc(100vh - 56px);
+    padding:  24px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    /* overflow: auto; */
+
+}
+
+.m-content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 24px 0; */
+}
+
+.m-header-title{
+    font-size: 24px;
+    font-family: Notosans-Bold;
+    color: #111;
+}
+
+.m-content-body{
+    background-color: #fff;
+    padding: 0 16px;
+    margin-top: 16px;
+}
+
+.m-body-toolbar{
+    padding: 12px 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 16px;
+    /* margin-top: 16px; */
+}
+
+.m-icon-refresh:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.m-search-area{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.m-input-search{
+    min-width: 240px;
+    width: 240px;
+   
+
+}
+
+.m-input-icon{
+    background-position: -992px -360px;
+    background-position-y: center;
+    background-position-x: 12px;
+    padding-right: 36px;
+    padding-left: 16px;
+
+}
+
+.m-icon-search:hover{
+   opacity: 0.8;
+}
+
+.m-icon-search{
+    position: absolute;
+    right: 8px;
+    cursor: pointer;
+    padding-left: 10px;
+}

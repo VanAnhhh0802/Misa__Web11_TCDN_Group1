@@ -1,0 +1,50 @@
+.m-sidebar {
+    width: 200px;
+    background-color: #393a3d;
+    color: #fff;
+}
+
+.m-logo-container {
+    height: 56px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+}
+
+.m-logo-icon {
+    height: 32px;
+}
+
+.m-sidebar a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.m-sidebar-item {
+    padding: 20px 12px 0;
+    overflow: auto;
+    height: calc(100vh - 56px);
+}
+
+.m-item-router {
+    display: flex;
+    align-items: center;
+    padding: 0 12px 4px;
+    height: 44px;
+    position: relative;
+}
+
+.m-item-router.active::before,
+.m-item-router:hover::before {
+    content: "";
+    background-color: rgb(212, 215, 220);
+    opacity: 0.2;
+    width: 100%;
+    height: 44px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    border-radius: 4px;
+}
