@@ -8,6 +8,10 @@
   border: 1px solid #ccc;
   border: none;
   font-family: "Roboto";
+  border-radius: 4px;
+}
+input:focus {
+  border: 1px solid var(--main-color);
 }
 label ~ * {
   margin-top: 8px;

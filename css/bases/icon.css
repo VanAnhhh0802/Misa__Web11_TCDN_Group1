@@ -75,3 +75,10 @@
   background-position: -1171px -356px;
   cursor: pointer;
 }
+/* toast */
+.toast-left-icon {
+  background-position: -844px -308px;
+}
+.toast-right-icon {
+  background-position: -75px -307px;
+}

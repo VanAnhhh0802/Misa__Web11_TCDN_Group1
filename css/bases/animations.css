@@ -1,0 +1,14 @@
+/* Toast */
+@keyframes toast-show {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes toast-hide {
+  100% {
+    transform: translateX(120%);
+  }
+}
