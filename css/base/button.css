@@ -1,0 +1,33 @@
+.btn-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn {
+    border: 1px solid #000;
+    min-width: 80px;
+    height: 36px;
+    padding: 0 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.btn-form .btn-right {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.btn-form .btn-right .btn.btn-add {
+    background: #50b83c;
+    border: none;
+    color: #fff;
+}
+.btn-success {
+    float: right;
+    background: #50b83c;
+    border: none;
+    color: #fff;
+}

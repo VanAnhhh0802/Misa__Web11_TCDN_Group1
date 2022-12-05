@@ -1,0 +1,23 @@
+/* .check {
+    position: relative;
+} */
+.check_item {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #000;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.check_item .check-img {
+    background: url('../../assets/icon/Sprites.64af8f61.svg') no-repeat -1225px -363px;
+    width: 14px;
+    height: 11px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}

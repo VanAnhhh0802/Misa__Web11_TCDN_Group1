@@ -1,0 +1,135 @@
+.popup-layout {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 20;
+    display: none;
+}
+.popup-layout .popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* bottom: 0; */
+    background: #fff;
+    width: 900px;
+    transform: translate(-50%, -50%);
+}
+.icon-popup {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 14px;
+}
+.icon-popup .icon-mark {
+    background: url('../../assets/icon/Sprites.64af8f61.svg') no-repeat -89px -144px;
+    width: 24px;
+    height: 24px;
+}
+.icon-popup .icon-close {
+    background: url('../../assets/icon/Sprites.64af8f61.svg') no-repeat -144px -144px;
+    width: 24px;
+    height: 24px;
+}
+.popup-form {
+    padding: 0 24px 24px 24px;
+}
+.popup-form label {
+    font-weight: 600;
+}
+.popup-form .form-header {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.popup-form .form-header .text {
+    font-size: 24px;
+    font-weight: 600;
+}
+.employee,
+.guest {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+.popup-form label span {
+    color: red;
+}
+.popup-form .form-info {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.popup-form .form-info .left,
+.popup-form .form-info .right {
+    width: calc((100% - 25px) / 2);
+}
+.popup-form .form-info .box-info {
+    display: flex;
+    gap: 8px;
+}
+.popup-form .item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+.popup-form .item.date {
+    width: 50%;
+}
+.popup-form input,
+.popup-form select {
+    height: 36px;
+    padding: 0 12px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #babec5;
+}
+.popup-form input:focus,
+.popup-form select:focus {
+    border: 1px solid #50b83c;
+}
+.popup-form option {
+    height: 36px;
+    width: 100%;
+}
+.item-gender {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.popup-form .form-info .box-info .fullname {
+    width: 100%;
+}
+.group-gender {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+.popup-form .form-info .right .box,
+.popup-form .form-info .right .card {
+    display: flex;
+    gap: 10px;
+}
+.popup-form .form-info .right .card .card-number {
+    width: 100%;
+}
+.phone-box,
+.bank {
+    display: flex;
+    gap: 10px;
+    width: 600px;
+}
+.phone-box .item,
+.bank .item {
+    width: calc((100% - 20px) / 3);
+}
+.form-footer {
+    border-bottom: 1px solid #babec5;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+}

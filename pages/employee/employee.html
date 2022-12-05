@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="shortcut icon" href="../../assets/icon/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="../../css/base.css" />
+    </head>
+    <body>
+        <div class="info-employee">
+            <div class="wrp">
+                <div class="toolbar">
+                    <div class="toolbar-box">
+                        <div class="toolbar-header">
+                            <img src="../../assets/icon/Logo_Module_TiengViet_White.66947422.svg" alt="" />
+                        </div>
+                        <div class="toolbar-menu">
+                            <a class="item" href="">
+                                <div class="item-img"></div>
+                                <div class="item-name">Tổng quan</div>
+                            </a>
+                            <a class="item" href="">
+                                <div class="item-img"></div>
+                                <div class="item-name">Tiền Mặt</div>
+                            </a>
+                            <a class="item" href="">
+                                <div class="item-img"></div>
+                                <div class="item-name">Tiền gửi</div>
+                            </a>
+                            <a class="item" href="">
+                                <div class="item-img"></div>
+                                <div class="item-name">Mua hàng</div>
+                            </a>
+                            <a class="item" href="">
+                                <div class="item-img"></div>
+                                <div class="item-name">Bán hàng</div>
+                            </a>
+                            <a class="item" href="">
+                                <div class="item-img"></div>
+                                <div class="item-name">Quản lý hoá đơn</div>
+                            </a>
+                            <a class="item" href="">
+                                <div class="item-img"></div>
+                                <div class="item-name">Kho</div>
+                            </a>
+                            <a class="item" href="">
+                                <div class="item-img"></div>
+                                <div class="item-name">Công cụ dụng cụ</div>
+                            </a>
+                            <a class="item" href="">
+                                <div class="item-img"></div>
+                                <div class="item-name">Tài sản cố định</div>
+                            </a>
+                            <a class="item" href="">
+                                <div class="item-img"></div>
+                                <div class="item-name">Thuế</div>
+                            </a>
+                            <a class="item" href="">
+                                <div class="item-img"></div>
+                                <div class="item-name">Giá thành</div>
+                            </a>
+                            <a class="item" href="">
+                                <div class="item-img"></div>
+                                <div class="item-name">Tổng hợp</div>
+                            </a>
+                            <a class="item" href="">
+                                <div class="item-img"></div>
+                                <div class="item-name">Ngân sách</div>
+                            </a>
+                            <a class="item" href="">
+                                <div class="item-img"></div>
+                                <div class="item-name">Báo cáo</div>
+                            </a>
+                            <a class="item" href="">
+                                <div class="item-img"></div>
+                                <div class="item-name">Phân tích tài chính</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="content-header">
+                        <div class="content-header-left">
+                            <div class="header-left-img"></div>
+                            <div class="header-name">
+                                <div class="name">CÔNG TY TNHH SẢN XUẤT - THƯƠNG MẠI - DỊCH VỤ QUÍ PHÚC</div>
+                                <div class="dropdown"></div>
+                            </div>
+                        </div>
+                        <div class="content-header-right">
+                            <div class="header-right-img"></div>
+                            <div class="header-right-avatar">
+                                <div class="avatar-img"></div>
+                                <div class="avatar-info">
+                                    <div class="avatar-name">Nguyễn Văn Mạnh</div>
+                                    <div class="avatar-dropdown"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-body">
+                        <div class="employee">
+                            <div class="employee-name">Nhân Viên</div>
+                            <div id="btn-popup" class="btn">Thêm mới nhân viên</div>
+                        </div>
+                        <div class="table">
+                            <div class="search">
+                                <div class="search-input">
+                                    <input type="text" placeholder="Tìm theo mã, tên nhân viên" />
+                                    <div class="search-img"></div>
+                                </div>
+                                <div class="search-reset"></div>
+                            </div>
+
+                            <div class="table-content">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th class="check" style="width: 56px">
+                                                <div class="check_item" id="check_all">
+                                                    <div class="check-img"></div>
+                                                </div>
+                                            </th>
+                                            <th style="width: 118px">Mã Nhân Viên</th>
+                                            <th style="width: 200px">Tên Nhân Viên</th>
+                                            <th style="width: 87px">Giới Tính</th>
+                                            <th class="tac">Ngày Sinh</th>
+                                            <th style="width: 130px">Số CMND</th>
+                                            <th style="width: 150px">Chức Danh</th>
+                                            <th>Tên Đơn Vị</th>
+                                            <th>Số Tài Khoản</th>
+                                            <th>Tên Ngân Hàng</th>
+                                            <th>Chi Nhánh TK Ngân Hàng</th>
+                                            <th class="setting">Chức năng</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="check" style="width: 56px">
+                                                <div class="check_item" id="check">
+                                                    <div class="check-img"></div>
+                                                </div>
+                                            </td>
+                                            <td>Mã Nhân Viên</td>
+                                            <td>Đinh Hoàng Phương Nam</td>
+                                            <td>Giới Tính</td>
+                                            <td class="tac">Ngày Sinh</td>
+                                            <td>038201006295</td>
+                                            <td>Tổng Giám Đốc</td>
+                                            <td>Tên Đơn Vị</td>
+                                            <td>Số Tài Khoản</td>
+                                            <td>Tên Ngân Hàng</td>
+                                            <td>Chi Nhánh TK Ngân Hàng</td>
+                                            <td class="setting">
+                                                <div class="fix">Sửa</div>
+                                                <div class="fix-icon">
+                                                    <div class="list-setting">
+                                                        <div class="item">Nhân Bản</div>
+                                                        <div class="item">Xoá</div>
+                                                        <div class="item">Ngững Sử Dụng</div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="check" style="width: 56px">
+                                                <div class="check_item">
+                                                    <div class="check-img"></div>
+                                                </div>
+                                            </td>
+                                            <td>Mã Nhân Viên</td>
+                                            <td>Tên Nhân Viên</td>
+                                            <td>Giới Tính</td>
+                                            <td class="tac">Ngày Sinh</td>
+                                            <td>Số CMND</td>
+                                            <td>Chức Danh</td>
+                                            <td>Tên Đơn Vị</td>
+                                            <td>Số Tài Khoản</td>
+                                            <td>Tên Ngân Hàng</td>
+                                            <td>Chi Nhánh TK Ngân Hàng</td>
+                                            <td class="setting">Chức Năng</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="check" style="width: 56px">
+                                                <div class="check_item">
+                                                    <div class="check-img"></div>
+                                                </div>
+                                            </td>
+                                            <td>Mã Nhân Viên</td>
+                                            <td>Tên Nhân Viên</td>
+                                            <td>Giới Tính</td>
+                                            <td class="tac">Ngày Sinh</td>
+                                            <td>Số CMND</td>
+                                            <td>Chức Danh</td>
+                                            <td>Tên Đơn Vị</td>
+                                            <td>Số Tài Khoản</td>
+                                            <td>Tên Ngân Hàng</td>
+                                            <td>Chi Nhánh TK Ngân Hàng</td>
+                                            <td class="setting">Chức Năng</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="check" style="width: 56px">
+                                                <div class="check_item">
+                                                    <div class="check-img"></div>
+                                                </div>
+                                            </td>
+                                            <td>Mã Nhân Viên</td>
+                                            <td>Tên Nhân Viên</td>
+                                            <td>Giới Tính</td>
+                                            <td class="tac">Ngày Sinh</td>
+                                            <td>Số CMND</td>
+                                            <td>Chức Danh</td>
+                                            <td>Tên Đơn Vị</td>
+                                            <td>Số Tài Khoản</td>
+                                            <td>Tên Ngân Hàng</td>
+                                            <td>Chi Nhánh TK Ngân Hàng</td>
+                                            <td class="setting">Chức Năng</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="check" style="width: 56px">
+                                                <div class="check_item">
+                                                    <div class="check-img"></div>
+                                                </div>
+                                            </td>
+                                            <td>Mã Nhân Viên</td>
+                                            <td>Tên Nhân Viên</td>
+                                            <td>Giới Tính</td>
+                                            <td class="tac">Ngày Sinh</td>
+                                            <td>Số CMND</td>
+                                            <td>Chức Danh</td>
+                                            <td>Tên Đơn Vị</td>
+                                            <td>Số Tài Khoản</td>
+                                            <td>Tên Ngân Hàng</td>
+                                            <td>Chi Nhánh TK Ngân Hàng</td>
+                                            <td class="setting">Chức Năng</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="check" style="width: 56px">
+                                                <div class="check_item">
+                                                    <div class="check-img"></div>
+                                                </div>
+                                            </td>
+                                            <td>Mã Nhân Viên</td>
+                                            <td>Tên Nhân Viên</td>
+                                            <td>Giới Tính</td>
+                                            <td class="tac">Ngày Sinh</td>
+                                            <td>Số CMND</td>
+                                            <td>Chức Danh</td>
+                                            <td>Tên Đơn Vị</td>
+                                            <td>Số Tài Khoản</td>
+                                            <td>Tên Ngân Hàng</td>
+                                            <td>Chi Nhánh TK Ngân Hàng</td>
+                                            <td class="setting">Chức Năng</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="check" style="width: 56px">
+                                                <div class="check_item">
+                                                    <div class="check-img"></div>
+                                                </div>
+                                            </td>
+                                            <td>Mã Nhân Viên</td>
+                                            <td>Tên Nhân Viên</td>
+                                            <td>Giới Tính</td>
+                                            <td class="tac">Ngày Sinh</td>
+                                            <td>Số CMND</td>
+                                            <td>Chức Danh</td>
+                                            <td>Tên Đơn Vị</td>
+                                            <td>Số Tài Khoản</td>
+                                            <td>Tên Ngân Hàng</td>
+                                            <td>Chi Nhánh TK Ngân Hàng</td>
+                                            <td class="setting">Chức Năng</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="check" style="width: 56px">
+                                                <div class="check_item">
+                                                    <div class="check-img"></div>
+                                                </div>
+                                            </td>
+                                            <td>Mã Nhân Viên</td>
+                                            <td>Tên Nhân Viên</td>
+                                            <td>Giới Tính</td>
+                                            <td class="tac">Ngày Sinh</td>
+                                            <td>Số CMND</td>
+                                            <td>Chức Danh</td>
+                                            <td>Tên Đơn Vị</td>
+                                            <td>Số Tài Khoản</td>
+                                            <td>Tên Ngân Hàng</td>
+                                            <td>Chi Nhánh TK Ngân Hàng</td>
+                                            <td class="setting">Chức Năng</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="check" style="width: 56px">
+                                                <div class="check_item">
+                                                    <div class="check-img"></div>
+                                                </div>
+                                            </td>
+                                            <td>Mã Nhân Viên</td>
+                                            <td>Tên Nhân Viên</td>
+                                            <td>Giới Tính</td>
+                                            <td class="tac">Ngày Sinh</td>
+                                            <td>Số CMND</td>
+                                            <td>Chức Danh</td>
+                                            <td>Tên Đơn Vị</td>
+                                            <td>Số Tài Khoản</td>
+                                            <td>Tên Ngân Hàng</td>
+                                            <td>Chi Nhánh TK Ngân Hàng</td>
+                                            <td class="setting">Chức Năng</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="check" style="width: 56px">
+                                                <div class="check_item">
+                                                    <div class="check-img"></div>
+                                                </div>
+                                            </td>
+                                            <td>Mã Nhân Viên</td>
+                                            <td>Tên Nhân Viên</td>
+                                            <td>Giới Tính</td>
+                                            <td class="tac">Ngày Sinh</td>
+                                            <td>Số CMND</td>
+                                            <td>Chức Danh</td>
+                                            <td>Tên Đơn Vị</td>
+                                            <td>Số Tài Khoản</td>
+                                            <td>Tên Ngân Hàng</td>
+                                            <td>Chi Nhánh TK Ngân Hàng</td>
+                                            <td class="setting">Chức Năng</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="check" style="width: 56px">
+                                                <div class="check_item">
+                                                    <div class="check-img"></div>
+                                                </div>
+                                            </td>
+                                            <td>Mã Nhân Viên</td>
+                                            <td>Tên Nhân Viên</td>
+                                            <td>Giới Tính</td>
+                                            <td class="tac">Ngày Sinh</td>
+                                            <td>Số CMND</td>
+                                            <td>Chức Danh</td>
+                                            <td>Tên Đơn Vị</td>
+                                            <td>Số Tài Khoản</td>
+                                            <td>Tên Ngân Hàng</td>
+                                            <td>Chi Nhánh TK Ngân Hàng</td>
+                                            <td class="setting">Chức Năng</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="check" style="width: 56px">
+                                                <div class="check_item">
+                                                    <div class="check-img"></div>
+                                                </div>
+                                            </td>
+                                            <td>Mã Nhân Viên</td>
+                                            <td>Tên Nhân Viên</td>
+                                            <td>Giới Tính</td>
+                                            <td class="tac">Ngày Sinh</td>
+                                            <td>Số CMND</td>
+                                            <td>Chức Danh</td>
+                                            <td>Tên Đơn Vị</td>
+                                            <td>Số Tài Khoản</td>
+                                            <td>Tên Ngân Hàng</td>
+                                            <td>Chi Nhánh TK Ngân Hàng</td>
+                                            <td class="setting">Chức Năng</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="check" style="width: 56px">
+                                                <div class="check_item">
+                                                    <div class="check-img"></div>
+                                                </div>
+                                            </td>
+                                            <td>Mã Nhân Viên</td>
+                                            <td>Tên Nhân Viên</td>
+                                            <td>Giới Tính</td>
+                                            <td class="tac">Ngày Sinh</td>
+                                            <td>Số CMND</td>
+                                            <td>Chức Danh</td>
+                                            <td>Tên Đơn Vị</td>
+                                            <td>Số Tài Khoản</td>
+                                            <td>Tên Ngân Hàng</td>
+                                            <td>Chi Nhánh TK Ngân Hàng</td>
+                                            <td class="setting">Chức Năng</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="check" style="width: 56px">
+                                                <div class="check_item">
+                                                    <div class="check-img"></div>
+                                                </div>
+                                            </td>
+                                            <td>Mã Nhân Viên</td>
+                                            <td>Tên Nhân Viên</td>
+                                            <td>Giới Tính</td>
+                                            <td class="tac">Ngày Sinh</td>
+                                            <td>Số CMND</td>
+                                            <td>Chức Danh</td>
+                                            <td>Tên Đơn Vị</td>
+                                            <td>Số Tài Khoản</td>
+                                            <td>Tên Ngân Hàng</td>
+                                            <td>Chi Nhánh TK Ngân Hàng</td>
+                                            <td class="setting">Chức Năng</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="check" style="width: 56px">
+                                                <div class="check_item">
+                                                    <div class="check-img"></div>
+                                                </div>
+                                            </td>
+                                            <td>Mã Nhân Viên</td>
+                                            <td>Tên Nhân Viên</td>
+                                            <td>Giới Tính</td>
+                                            <td class="tac">Ngày Sinh</td>
+                                            <td>Số CMND</td>
+                                            <td>Chức Danh</td>
+                                            <td>Tên Đơn Vị</td>
+                                            <td>Số Tài Khoản</td>
+                                            <td>Tên Ngân Hàng</td>
+                                            <td>Chi Nhánh TK Ngân Hàng</td>
+                                            <td class="setting">Chức Năng</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="check" style="width: 56px">
+                                                <div class="check_item">
+                                                    <div class="check-img"></div>
+                                                </div>
+                                            </td>
+                                            <td>Mã Nhân Viên</td>
+                                            <td>Tên Nhân Viên</td>
+                                            <td>Giới Tính</td>
+                                            <td class="tac">Ngày Sinh</td>
+                                            <td>Số CMND</td>
+                                            <td>Chức Danh</td>
+                                            <td>Tên Đơn Vị</td>
+                                            <td>Số Tài Khoản</td>
+                                            <td>Tên Ngân Hàng</td>
+                                            <td>Chi Nhánh TK Ngân Hàng</td>
+                                            <td class="setting">Chức Năng</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="check" style="width: 56px">
+                                                <div class="check_item">
+                                                    <div class="check-img"></div>
+                                                </div>
+                                            </td>
+                                            <td>Mã Nhân Viên</td>
+                                            <td>Tên Nhân Viên</td>
+                                            <td>Giới Tính</td>
+                                            <td class="tac">Ngày Sinh</td>
+                                            <td>Số CMND</td>
+                                            <td>Chức Danh</td>
+                                            <td>Tên Đơn Vị</td>
+                                            <td>Số Tài Khoản</td>
+                                            <td>Tên Ngân Hàng</td>
+                                            <td>Chi Nhánh TK Ngân Hàng</td>
+                                            <td class="setting">Chức Năng</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="check" style="width: 56px">
+                                                <div class="check_item">
+                                                    <div class="check-img"></div>
+                                                </div>
+                                            </td>
+                                            <td>Mã Nhân Viên</td>
+                                            <td>Tên Nhân Viên</td>
+                                            <td>Giới Tính</td>
+                                            <td class="tac">Ngày Sinh</td>
+                                            <td>Số CMND</td>
+                                            <td>Chức Danh</td>
+                                            <td>Tên Đơn Vị</td>
+                                            <td>Số Tài Khoản</td>
+                                            <td>Tên Ngân Hàng</td>
+                                            <td>Chi Nhánh TK Ngân Hàng</td>
+                                            <td class="setting">Chức Năng</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="check" style="width: 56px">
+                                                <div class="check_item">
+                                                    <div class="check-img"></div>
+                                                </div>
+                                            </td>
+                                            <td>Mã Nhân Viên</td>
+                                            <td>Tên Nhân Viên</td>
+                                            <td>Giới Tính</td>
+                                            <td class="tac">Ngày Sinh</td>
+                                            <td>Số CMND</td>
+                                            <td>Chức Danh</td>
+                                            <td>Tên Đơn Vị</td>
+                                            <td>Số Tài Khoản</td>
+                                            <td>Tên Ngân Hàng</td>
+                                            <td>Chi Nhánh TK Ngân Hàng</td>
+                                            <td class="setting">Chức Năng</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="check" style="width: 56px">
+                                                <div class="check_item">
+                                                    <div class="check-img"></div>
+                                                </div>
+                                            </td>
+                                            <td>Mã Nhân Viên</td>
+                                            <td>Tên Nhân Viên</td>
+                                            <td>Giới Tính</td>
+                                            <td class="tac">Ngày Sinh</td>
+                                            <td>Số CMND</td>
+                                            <td>Chức Danh</td>
+                                            <td>Tên Đơn Vị</td>
+                                            <td>Số Tài Khoản</td>
+                                            <td>Tên Ngân Hàng</td>
+                                            <td>Chi Nhánh TK Ngân Hàng</td>
+                                            <td class="setting">Chức Năng</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="paging">
+                                    <div class="paging-left">
+                                        <div class="text">Tổng số: <span>185</span> bản ghi</div>
+                                    </div>
+                                    <div class="paging-right">
+                                        <div class="paging-combobox">
+                                            <div class="paging-select">
+                                                <div class="select">Số bản ghi trên 1 trang</div>
+                                                <div class="select-img"></div>
+                                            </div>
+                                            <div class="paging-option">
+                                                <div class="item">10 bản ghi trên 1 trang</div>
+                                                <div class="item">20 bản ghi trên 1 trang</div>
+                                                <div class="item">30 bản ghi trên 1 trang</div>
+                                                <div class="item">40 bản ghi trên 1 trang</div>
+                                                <div class="item">50 bản ghi trên 1 trang</div>
+                                            </div>
+                                        </div>
+                                        <div class="prev">Trước</div>
+                                        <div class="paging-number">
+                                            <a href="" class="number">1</a>
+                                            <a href="" class="number">2</a>
+                                            <a href="" class="number">3</a>
+                                            <div></div>
+                                            <div>...</div>
+                                            <a href="" class="number">52</a>
+                                        </div>
+                                        <div class="next">Sau</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup-layout">
+            <div class="popup">
+                <div class="icon-popup">
+                    <div class="icon-mark"></div>
+                    <div class="icon-close"></div>
+                </div>
+                <div class="popup-form">
+                    <div class="form-header">
+                        <div class="text">Thông Tin Nhân Viên</div>
+                        <div class="guest">
+                            <input type="checkbox" name="" id="" />
+                            <label for="">Là Khách Hàng</label>
+                        </div>
+                        <div class="employee">
+                            <input type="checkbox" name="" id="" />
+                            <label for="">Là Nhân Viên</label>
+                        </div>
+                    </div>
+                    <div class="form-info">
+                        <div class="left">
+                            <div class="box-info">
+                                <div class="item code">
+                                    <label for="">Mã <span>*</span></label>
+                                    <input id="code_input" type="text" name="" id="" />
+                                </div>
+                                <div class="item fullname">
+                                    <label for="">Tên</label>
+                                    <input type="text" name="" id="" />
+                                </div>
+                            </div>
+                            <div class="unit item">
+                                <label for="">Đơn vị</label>
+                                <select name="" id="">
+                                    <option value="">Phòng Nhân Sự</option>
+                                </select>
+                            </div>
+                            <div class="position item">
+                                <label for="">Chức Danh</label>
+                                <input type="text" name="" id="" />
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="box">
+                                <div class="date item">
+                                    <label for="">Ngày sinh</label>
+                                    <input type="date" name="" id="" />
+                                </div>
+                                <div class="gender item">
+                                    <label for="">Giới Tính</label>
+                                    <div class="group-gender">
+                                        <div class="item-gender">
+                                            <label for="">Nam</label>
+                                            <input type="radio" name="gender" id="" value="Nam" />
+                                        </div>
+                                        <div class="item-gender">
+                                            <label for="">Nữ</label>
+                                            <input type="radio" name="gender" id="" value="Nữ" />
+                                        </div>
+                                        <div class="item-gender">
+                                            <label for="">Khác</label>
+                                            <input type="radio" name="gender" id="" value="Khác" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-number item">
+                                    <label for="">Số CMND</label>
+                                    <input type="text" name="" id="" />
+                                </div>
+                                <div class="card-date item">
+                                    <label for="">Ngày Cấp</label>
+                                    <input type="text" name="" id="" />
+                                </div>
+                            </div>
+                            <div class="location-card item">
+                                <label for="">Nơi Cấp</label>
+                                <input type="text" name="" id="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="location item">
+                        <label for="">Địa Chỉ</label>
+                        <input type="text" name="" id="" />
+                    </div>
+                    <div class="form-footer">
+                        <div class="phone-box">
+                            <div class="phone-mobile item">
+                                <label for="">SĐT di động</label>
+                                <input type="text" name="" id="" />
+                            </div>
+                            <div class="phone item">
+                                <label for="">SĐT cố định</label>
+                                <input type="text" name="" id="" />
+                            </div>
+                            <div class="email item">
+                                <label for="">Email</label>
+                                <input type="email" name="" id="" />
+                            </div>
+                        </div>
+                        <div class="bank">
+                            <div class="bank-number item">
+                                <label for="">Tài Khoản ngân hàng</label>
+                                <input type="text" name="" id="" />
+                            </div>
+                            <div class="bank-name item">
+                                <label for="">Tên Ngân Hàng</label>
+                                <input type="text" name="" id="" />
+                            </div>
+                            <div class="location-bank item">
+                                <label for="">Chi Nhánh</label>
+                                <input type="email" name="" id="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-form">
+                        <div class="btn btn-cancel">Huỷ</div>
+                        <div class="btn-right">
+                            <div class="btn btn-save">Cất</div>
+                            <div class="btn btn-add">Cất và Thêm</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="../../lib/jquery-3.6.0.min.js"></script>
+    <script src="../../js/employee.js"></script>
+</html>

@@ -1,0 +1,40 @@
+.paging {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    position: sticky;
+    bottom: 0;
+    right: 0;
+    background: #fff;
+    z-index: 5;
+    width: 100%;
+    left: 0;
+}
+
+.paging-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 16px;
+}
+.paging-number {
+    display: flex;
+    gap: 5px;
+}
+.paging-number .number {
+    text-decoration: none;
+    color: #000;
+}
+select {
+    outline: none;
+    cursor: pointer;
+    height: 36px;
+    padding: 0 12px;
+}
+select:focus {
+    border: 1px solid #29a219;
+}
+select * {
+    height: 36px;
+}

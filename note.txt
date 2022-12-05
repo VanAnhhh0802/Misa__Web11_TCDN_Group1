@@ -1,0 +1,7 @@
+- chọn 1 bảng màu cố định
+- màu tối xanh, đen
+- 1 web 1 font chữ, font chữ không chân
+- kích thước tối thiểu 1280x720
+- + lấy thẻ liền kề thẻ chỉ định
+- tiền căn phải, chữ căn trái
+- ngày căn giữa

@@ -1,0 +1,39 @@
+.paging-combobox {
+    position: relative;
+    min-width: 200px;
+}
+.paging-select {
+    height: 36px;
+    padding: 0 8px 0 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border: 1px solid #50b83c;
+    border-radius: 4px;
+}
+.paging-select .select-img {
+    background: url('../../assets/icon/Sprites.64af8f61.svg') no-repeat -1129px -365px;
+    width: 14px;
+    height: 8px;
+    line-height: 36px;
+}
+.paging-option {
+    position: absolute;
+    bottom: 36px;
+    width: 100%;
+    max-height: 308px;
+    padding-top: 8px;
+    overflow-y: auto;
+    background: #fff;
+    display: none;
+}
+.paging-option .item {
+    height: 36px;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+}
+.paging-option .item:hover {
+    background: rgba(80, 184, 60, 0.1);
+}

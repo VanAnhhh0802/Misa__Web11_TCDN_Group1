@@ -1,0 +1,35 @@
+.dialog-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+.dialog-box {
+    position: absolute;
+    width: 400px;
+    background: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 24px;
+    border-radius: 4px;
+}
+.dialog-warning .img {
+    background: url('../assets/icon/Sprites.64af8f61.svg') no-repeat -598px -463px;
+    width: 36px;
+    height: 37px;
+}
+.dialog-warning .text {
+    width: calc(100% - 44px);
+}
+.dialog-warning {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-size: 14px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+}
