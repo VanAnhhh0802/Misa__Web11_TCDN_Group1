@@ -43,3 +43,16 @@
   margin-left: 8px;
   background-position: -1018px -23px;
 }
+
+/* function */
+
+.btn-function-fix,
+.btn-function__dropdown {
+  height: 36px;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  cursor: pointer;
+  color: #0075c0;
+  font-weight: 600;
+}

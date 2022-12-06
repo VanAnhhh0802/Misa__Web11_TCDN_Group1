@@ -60,6 +60,13 @@
 .sidebar-collapse__icon {
   background-position: -29px -356px;
 }
+/* table */
+.table-icon--sort {
+  background-position: -1724px -519px;
+}
+.table-icon-filter {
+  background-position: -1600px -88px;
+}
 /* Company  */
 .company__icon {
   background-position: -1115px -361px;
@@ -96,4 +103,16 @@
 .toast-icon--infor {
   background-position: -672px -462px;
   margin-right: 8px;
+}
+/* function  */
+.btn-function-fix {
+  border-right: 1px solid #fff;
+}
+/* form icon */
+.form-icon--help {
+  background-position: -89px -144px;
+}
+.form-icon--close {
+  background-position: -144px -144px;
+  cursor: pointer;
 }

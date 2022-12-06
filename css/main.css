@@ -89,7 +89,31 @@
 .w-100 {
   width: 100px;
 }
+.w-200 {
+  width: 200px;
+}
 .border-focus {
   border: 1px solid var(--main-color);
+}
+.row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.col {
+  width: 50%;
+  display: flex;
+}
+.col {
+  margin-left: 24px;
+}
+.row ~ .row {
+  margin-top: 24px;
+}
+.col-gap {
+  column-gap: 16px;
+}
+.no-border {
+  border: none;
 }
 /*  */

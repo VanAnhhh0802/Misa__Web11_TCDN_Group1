@@ -43,10 +43,10 @@
   font-family: "Roboto";
 }
 .user__avt {
-  width: 36px;
-  height: 36px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
-  background-position: -608px -1140px;
+  background-position: -352px -894px;
 }
 .user__name {
   margin: 0 8px;

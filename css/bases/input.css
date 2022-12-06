@@ -5,16 +5,21 @@
   box-sizing: border-box;
   font-size: 13px;
   outline: none;
-  border: 1px solid #ccc;
-  border: none;
+  border: 1px solid var(--border-color);
   font-family: "Roboto";
   border-radius: 4px;
+}
+input {
+  box-sizing: border-box;
 }
 input:focus {
   border: 1px solid var(--main-color);
 }
 label ~ * {
   margin-top: 8px;
+}
+.input--required {
+  color: #ff0000;
 }
 .no-border-focus:focus {
   border: none;
@@ -28,4 +33,34 @@ label ~ * {
 }
 .company__input:focus ~ .sub-list-company {
   display: block;
+}
+/* form add employee */
+.form-input-client,
+.form-input-supplier {
+  margin: 0;
+  width: 20px;
+  height: 20px;
+  margin: 0 8px;
+}
+.input__form-id,
+.input__form-name,
+.input__form-birth {
+  width: 100%;
+  padding: 8px 8px 8px 12px;
+  outline: none;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+.input__form-sex-male,
+.input__form-sex-female {
+  width: 18px;
+  height: 18px;
+}
+.input__form-sex-female {
+  margin-left: 16px;
+}
+.input__form-unit,
+.input__form-position,
+.input__form-issued-by {
+  width: 100%;
 }

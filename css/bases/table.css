@@ -10,6 +10,7 @@ td {
   box-sizing: border-box;
 }
 th {
+  cursor: pointer;
   background-color: var(--background-table-color);
 }
 table {
@@ -25,4 +26,26 @@ th {
 thead {
   position: sticky;
   top: 0;
+}
+tr:hover {
+  background-color: #f5f5f5;
+}
+.table-header {
+  justify-content: space-between;
+}
+.table-header:hover .table-header-icon-wrapper {
+  display: block;
+}
+/* header icon */
+.table-header-icon-wrapper {
+  display: none;
+  flex: 1;
+  justify-content: space-between;
+}
+.table-header:hover.table-header-icon-wrapper {
+  display: block;
+}
+
+.function-dropdown-icon {
+  background-position: -892px -356px;
 }
