@@ -32,9 +32,8 @@
     background-color: #d2d3d6;
 }
 
-.m-button-text{
+.m-btn-text{
     font-family: Notosans-Semibold;
     font-size: 13px;
-    line-height: 13px;
     color: inherit;
 }

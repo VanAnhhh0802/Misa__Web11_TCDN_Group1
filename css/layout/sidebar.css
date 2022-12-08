@@ -48,3 +48,31 @@
     position: absolute;
     border-radius: 4px;
 }
+
+/* @media screen and (max-width: 1280px) {
+    .m-sidebar {
+        width: 73px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .m-sidebar-item {
+        padding: 0;
+    }
+
+    .m-logo-icon, .m-item-title {
+        display: none;
+    }
+
+    .m-sidebar .m-icon-three-stripes {
+        display: block;
+        color: white;
+    }
+
+    .m-item-icon,
+    .m-option-icon {
+        margin-right: 0
+    }
+} */

@@ -18,11 +18,19 @@
     align-items: center;
 }
 
-.m-navbar-icon {
+.m-navbar-icon-left {
     margin: 0 24px;
 }
 
-.m-navbar-icon:hover {
+.m-navbar-icon-right {
+    margin: 0 24px;
+}
+
+.m-icon-bell {
+    margin-right: 0;
+}
+
+.m-navbar-icon-left:hover, .m-navbar-icon-right:hover {
     cursor: pointer;
     opacity: 0.8;
 }
@@ -30,12 +38,7 @@
 .m-branch-name,
 .m-user-name {
     font-family: Notosans-Semibold;
-    padding-left: 8px;
     font-size: 14px;
-}
-
-.m-user-image {
-    margin-right: 6px;
 }
 
 .m-user-image img {

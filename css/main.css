@@ -8,8 +8,6 @@
 @import url(./base/checkbox.css);
 @import url(./base/radio.css);
 @import url(./base/dialog.css);
-
-
 /* import file layout css */
 @import url(./layout/paging.css);
 @import url(./layout/sidebar.css);
@@ -17,10 +15,7 @@
 @import url(./layout/navbar.css);
 @import url(./layout/content.css);
 @import url(./layout/main-content.css);
-@import url(./layout/tbody.css);
 @import url(./layout/popup.css);
-
-
 
 body {
     margin: 0;
@@ -29,6 +24,7 @@ body {
     font-family: Notosans-Regular;
 
 }
+
 /* Reset CSS */
 * {
     box-sizing: border-box;
@@ -63,29 +59,29 @@ body {
     src: url(../assets/fonts/notosans-semibold.df3e6dc4.woff2);
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 10px;
     height: 10px;
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background: #b8bcc3;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background: #888;
 }
 
-::-webkit-scrollbar-track-piece{
+::-webkit-scrollbar-track-piece {
     background-color: #f1f1f1;
     width: 10px;
 }
 
-.m-container{
+.m-container {
     display: flex;
     height: 100vh;
 }
@@ -96,26 +92,25 @@ body {
 
 .m-flex {
     display: flex;
-  }
-  
-  .m-flex-wrap {
+}
+
+.m-flex-wrap {
     display: flex;
     flex-wrap: wrap;
-  }
-  
-  .m-pr-6 {
+}
+
+.m-pr-6 {
     padding-right: 6px;
-  }
-  
-  .m-pb-12 {
+}
+
+.m-pb-12 {
     padding-bottom: 12px;
-  }
-  
-  .m-pb-24{
+}
+
+.m-pb-24 {
     padding-bottom: 24px;
-  }
-   
-  .m-ml-8 {
+}
+
+.m-ml-8 {
     margin-left: 8px;
-  }
-  
+}

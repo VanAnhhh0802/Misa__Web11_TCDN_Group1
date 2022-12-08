@@ -1,5 +1,6 @@
 th,
-td , tr{
+td,
+tr {
     padding: 0 16px;
 }
 
@@ -26,6 +27,13 @@ td , tr{
     vertical-align: middle;
 }
 
+.m-tbody {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
 .m-th-widget {
     border-right: none;
     position: sticky;
@@ -40,11 +48,11 @@ td , tr{
     border-bottom: 1px solid #c7c7c7;
 }
 
-.m-tr:hover .m-td{
+.m-tr:hover .m-td {
     background-color: #f2f9ff;
 }
 
-.checked .m-td{
+.checked .m-td {
     background-color: #e5f3ff;
 }
 
@@ -105,7 +113,7 @@ td:last-child {
 }
 
 .m-tr .m-td-multi {
-    z-index: 2;
+    /* z-index: 2; */
     position: sticky;
     background-color: #fff;
 }

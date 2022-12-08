@@ -33,8 +33,21 @@
 }
 
 .m-input-error {
-    border-color: #E60000;
 }
+
+.m-input-message-error{
+    display: none;
+    border-color: #E60000;
+    position: absolute;
+    color: #E60000;
+    font-size: 12px;
+    padding-top: 8px;
+}
+
+/* input[required].m-input-error+div.m-input-message-error{
+    display: block;
+}  */
+
 
 .m-input-40 {
     width: 40% !important;
