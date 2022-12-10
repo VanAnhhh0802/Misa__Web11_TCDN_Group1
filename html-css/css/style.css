@@ -1,10 +1,17 @@
 
-
+@import url(./components/custom-scrollbar.css);
 @import url(./components/icon.css);
 @import url(./components/button.css);
 @import url(./components/comboBox.css);
 @import url(./components/input.css);
 @import url(./components/employee.css);
+@import url(./layout/header.css);
+@import url(./layout/sidebar.css);
+@import url(./components/table.css);
+@import url(./components/dialog.css);
+@import url(./components/form.css);
+@import url(./components/checkbox.css);
+@import url(./components/radio.css);
 
 @font-face {
     font-family: notosans;
@@ -41,6 +48,11 @@
     font-family: notosans;
     font-size: 13px;
     margin: 0;
+    /* outline: none; */
+}
+
+body {
+    color: #111;
 }
 
 h1 {
@@ -50,4 +62,23 @@ h1 {
 .m-row {
     width: 100%;
     margin-top: 8px;
+}
+
+.m-flex {
+    display: flex;
+}
+.m-margin-lr-16 {
+    margin: 0 16px;
+}
+
+.m-margin-lr-12 {
+    margin: 0 12px;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.m-p-10 {
+    padding: 10px;
 }

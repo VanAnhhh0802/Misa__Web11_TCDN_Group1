@@ -1,0 +1,65 @@
+.dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 10;
+}
+
+.display-none {
+    display: none;
+}
+
+.dialog-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 32px;
+    min-width: 450px;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.dialog-content {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #f1f1f1;
+}
+
+.dialog-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: flex;
+}
+
+.close-icon,
+.help-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    margin-left: 10px;
+
+}
+
+.dialog-header {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 24px 0;
+}
+
+.dialog-text {
+    padding-left: 16px;
+    font-size: 14px;   
+}
+
+.dialog-footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+

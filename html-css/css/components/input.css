@@ -1,25 +1,26 @@
 .m-input-box {
     position: relative;
-    width: 200px;
+    align-items: center;
 }
 .m-input-label {
     font-family: notosans Bold;
-    padding-bottom: 8px;
+    display: flex;
+    margin-bottom: 8px;
 }
 
 .m-input {
     height: 36px;
     width: 100%;
     color: #000000;
-    border: 1px solid #E0E0E0;
+    border: 1px solid #babec5;
     border-radius: 4px;
-    padding-left: 12px;
+    padding: 0 12px;
     outline: none;
     font-size: 13px;
 }
-.m-input-err {
-    border: 1px solid #9E9E9E;
 
+.m-input-err {
+    border: 1px solid #E61D1D;
 }
 
 .m-input-err-text {
@@ -43,4 +44,18 @@
     transform: translate(0,-50%);
     right: 16px;
     text-align: center;
+}
+
+.m-input-icon-box {
+    display: flex;
+    position: relative;
+    padding-right: 36px;
+}
+
+.m-input-with-icon {
+    padding-right: 36px;
+}
+
+.m-input-title-require {
+    color: #E61D1D;
 }

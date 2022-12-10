@@ -1,0 +1,194 @@
+
+.page-table {
+    position: sticky;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    height: calc(100% - 136px);
+}
+
+.table-container {
+    width: 100%;
+    overflow: auto;
+    height: 100%;
+}
+
+
+.m-table {
+    border-collapse: collapse;
+    outline: none;
+    width: 100%;
+    height: 100%;
+}
+
+.m-table tr {
+    border-bottom: 1px solid #F2F2F2;
+    height: 40px;
+    cursor: pointer;
+}
+
+.m-table tbody tr:hover {
+    background-color: #F5F5F5;
+}
+
+.m-table tbody tr:hover > td.table-checkbox{
+    background-color: #F5F5F5;
+}
+
+.m-table tbody tr:hover > td.table-func{
+    background-color: #F5F5F5;
+}
+
+.m-table thead {
+    position: sticky;
+    z-index: 3;
+    top: 0;
+    left: 0;
+}
+
+.m-table th {
+    background-color: #F5F5F5;
+    text-align: left;
+    padding: 0 16px;
+    border-left: 1px solid #F2F2F2;
+}
+.m-table td {
+    height: 40px;
+    padding: 0 16px;
+    border-left: 1px solid #F2F2F2;
+}
+
+
+.m-table thead tr th.table-checkbox {
+    background-color: #F5F5F5;
+}
+.m-table tbody tr td.table-checkbox {
+    background-color: #fff;
+}
+
+.m-table thead tr th.table-func {
+    background-color: #F5F5F5;
+}
+
+.m-table tbody tr td.table-func {
+    background-color: #fff;
+}
+
+.text-center {
+    text-align: center;
+}
+.m-table thead tr th.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+
+.table-checkbox {
+    width: 40px;
+}
+
+.table-id {
+    min-width: 136px;
+    
+}
+
+.table-name {
+    min-width: 220px;
+}
+
+.table-gender{
+    min-width: 100px;
+}
+
+.table-dob{
+    min-width: 150px;
+}
+
+.table-id-card{
+    min-width: 200px;
+}
+
+.table-position{
+    min-width: 220px;
+}
+
+.table-work{
+    min-width: 200px;
+}
+
+.table-bank-id{
+    min-width: 176px;
+}
+
+.table-bank-name{
+    min-width: 300px;
+}
+
+.table-bank-place{
+    min-width: 300px;
+}
+
+.table-func {
+    min-width: 120px;
+    position: sticky;
+    right: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+
+.m-table thead tr th.table-checkbox {
+    position: sticky;
+    left: 0;
+    top: 0;
+    background-color: #F5F5F5;
+}
+.m-table tbody tr td.table-checkbox {
+    position: sticky;
+    left: 0;
+}
+
+.table-checkbox {
+    left: 0;
+}
+
+.func {
+    display: flex;
+    align-items: center;
+    width: 60px;
+    height: 36px;
+    position: relative;
+}
+
+.default-func {
+    color: #0075c0;
+}
+
+.more-func {
+    width: 32px;
+    display: flex;
+}
+
+.more-func-select {
+    width: 100%;
+    opacity: 0;
+    z-index: 100;
+}
+
+.more-func__btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 8px 10px;
+}
+
+.tr-onclick {
+    background-color: #F5F5F5;
+}

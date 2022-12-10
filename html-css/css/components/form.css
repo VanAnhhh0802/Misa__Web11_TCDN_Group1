@@ -1,0 +1,83 @@
+/* form */
+.form {
+    width: 900px;
+    min-width: 900px;
+}
+
+.dialog-container.form {
+    padding: 0 24px;
+}
+
+.form-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.form-header .header-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+
+.form .m-input-box {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.radio-box {
+    padding: 10px 0 0 10px;
+}
+
+.radio-list {
+    display: flex;
+    align-items: center;
+    height: 36px;
+}
+
+.radio-btn {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.radio-icon {
+    padding: 0 10px;
+}
+
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+    border-top: 1px solid #E5e5e5;
+    align-items: center;
+    margin-top: 20px;
+    padding: 12px 0; 
+    /* background-color: #F5F5F5; */
+}
+
+.footer-left {
+    order: 1;
+}
+
+.footer-right {
+    display: flex;
+    order: 2;
+}
+
+.accept-btn {
+    order: 2;
+}
+
+.cancel-btn {
+    order: 1;
+}
+
+/* #accept-btn {
+    order: 3;
+}
+
+#cancel-btn {
+    order: 2;
+} */
