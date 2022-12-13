@@ -6,6 +6,9 @@ createEvent()
 fetchAllEmployees()
 getDepartments()
 getPositions()
+handleDropdown()
+handleCombobox()
+
 
 
 /**
@@ -47,50 +50,27 @@ function fetchAllEmployees() {
                                                         </span>
                                                 </label>
                                             </td>
-                                            <td class="table-id" table-property-name="EmployeeCode">
-                                            ${code}
-                                            </td>
-                                            <td class="table-name">
-                                                ${name}
-                                            </td>
-                                            <td class="table-gender">
-                                                ${gender}
-                                            </td>
-                                            <td class="table-dob text-center">
-                                                ${dob}
-                                            </td>
-                                            <td class="table-id-card">
-                                                ${idCard}
-                                            </td>
-                                            <td class="table-position">
-                                                ${position}
-                                            </td>
-                                            <td class="table-work">
-                                                ${departmentName}
-                                            </td>
-                                            <td class="table-bank-id">
-                                                ${bankAccountNumber}
-                                            </td>
-                                            <td class="table-bank-name">
-                                                 ${bankName}
-                                            </td>
-                                            <td class="table-bank-place">
-                                                ${bankBranchName}
-                                            </td>
+                                            <td class="table-id" table-property-name="EmployeeCode">${code}</td>
+                                            <td class="table-name">${name}</td>
+                                            <td class="table-gender">${gender}</td>
+                                            <td class="table-dob text-center">${dob}</td>
+                                            <td class="table-id-card">${idCard}</td>
+                                            <td class="table-position">${position}</td>
+                                            <td class="table-work">${departmentName}</td>
+                                            <td class="table-bank-id">${bankAccountNumber}</td>
+                                            <td class="table-bank-name">${bankName}</td>
+                                            <td class="table-bank-place">${bankBranchName}</td>
                                             <td class="table-func text-center m-flex">
-                                                <div class="func justify-content-center">
-                                                    <div class="default-func">sửa</div>
-                                                    <div class="more-func">
-                                                        <select name="moreFunc" class="more-func-select">
-                                                            <option value="" selected hidden></option>
-                                                            <option value="nhân bản">Nhân bản</option>
-                                                            <option value="xóa"><div class="remove-employee" data-value= ${employee.EmployeeId}>Xóa</div></option>
-                                                            <option value="sử dụng">Sử dụng</option>
-                                                        </select>
-                                                        <div class="more-func__btn">
-                                                            <div class="m-icon m-icon-16 m-dropdown-func-icon"></div>
+                                                <div class="m-dropdown">
+                                                    <button class="m-dropdown-type-feature m-dropdown-button-text m-edit-employee">
+                                                        <div class="m-button-text ">Sửa</div>
+                                                    </button>
+                                                    <button class="m-dropdown-type-feature m-dropdown-button-icon m-dropdown-icon-emp">
+                                                        <div class="m-button-text">
+                                                            <div class="m-icon m-icon-16 m-icon-arrow-down-blue"></div>
                                                         </div>
-                                                    </div>
+                                                    </button>
+                                                    
                                                 </div>
                                             </td>
                                         </tr>
@@ -143,36 +123,9 @@ function createEvent() {
      * author: QuangNV (08/12/2022) Double click vào hàng thì hiện thông tin nhân viên
      */
 
-    $("#tblEmployee").on("dblclick","tbody tr", function(e){
-        $("#addAndInsertForm").show();
-        action = 'insert';
-        currentId = $(this).data("value");
-        try {
-            $.ajax({
-                type: "GET",
-                url: `https://amis.manhnv.net/api/v1/Employees/${currentId}`,
-                success: function (response) {
-                    console.log(response)
-                    $("#addAndInsertForm .header-title").text("Thông tin nhân viên");
-                    $("#employeeCode").val(response.EmployeeCode);
-                    $("#employeeName").val(response.EmployeeName);
-                    $("#dob").val(bindingDate(response.DateOfBirth));
-                    // $("input[name='gender']:checked").val();
-                    // $("#employeeDepartment option:selected").val();
-                    $("#nationalId").val(response.IdentityNumber);
-                    // $("#employeePosition").val('05458d48-e7a0-11ec-9b48-00163e06abee');
-                    // $("#nationalIdDate").val(response.IdentityDate);
-                    $("#nationalIdPlace").val(response.IdentityPlace);
-                    $("#address").val(response.Address);
-                    $("#telephoneNumber").val(response.TelephoneNumber);
-                    $("#phoneNumber").val(response.PhoneNumber);
-                    $("#email").val(response.email);
-                }
-            });    
-        } catch (error) {
-            console.log(error)
-        }
-    })
+    $("#tblEmployee").on("dblclick","tbody tr", dblClickHandle)
+
+    $("#tblEmployee").on("click",".m-edit-employee", insertClickHandle)
     
     // $("#tblEmployee").on("click","tbody tr",function(e) {
     //     $(this).addClass("tr-onclick");
@@ -188,16 +141,33 @@ function createEvent() {
         fetchAllEmployees()
     });
     
+    /**
+     * Tab index khi hết dialog thì focus ô đầu tiên
+     * Author: QuangNV (08/12/2022)
+     */
     $("#close-btn").keydown(function (e) {
         e.preventDefault();
         $("#employeeCode").focus();    
     });
 
+    /**
+     * Event nút cất và thêm
+     * Author: QuangNV (08/12/2022)
+     */
     $("#accept-btn").on("click", addAndSaveBtnOnClickHandle);
 
+    /**
+     * event đóng dialog báo lỗi
+     * Author: QuangNV (08/12/2022)
+     */
     $(".dialog-close.close-icon").click(function() {
         $("#errDialog").hide();
     })
+
+     /**
+     * event đóng dialog báo lỗi
+     * Author: QuangNV (08/12/2022)
+     */
 
     $(".notify-btn").click(function() {
         $(fieldErrors[0]).focus();
@@ -214,6 +184,11 @@ function createEvent() {
         }
     })
 
+     /**
+     * event xử lý validate dữ liệu. Báo lỗi ngay khi người dùng unfocus khỏi ô input bị lỗi
+     * Author: QuangNV (08/12/2022)
+     */
+
     $('[m-required]').blur(function() {
         const value = $(this).val();
         if (!value || value.trim() == '') {
@@ -229,14 +204,19 @@ function createEvent() {
         }
     })
 
-    $('.remove-employee').on('click',function(){
-        try {
-            const deleteId = $(this).data('value');
-            console.log(deleteId)
-        } catch (error) {
-            console.log(error)
-        }
-    })
+     /**
+     * event xử lý xóa nhân viên
+     * Author: QuangNV (12/12/2022)
+     */
+
+    // $('.remove-employee').on('click',function(){
+    //     try {
+    //         const deleteId = $(this).data('value');
+    //         console.log(deleteId)
+    //     } catch (error) {
+    //         console.log(error)
+    //     }
+    // })
 }
 
 /**
@@ -315,11 +295,6 @@ function addAndSaveBtnOnClickHandle(){
         }
     }
 
-    // if(ErrMessages.length) {
-    //     $("#errDialog .dialog-text").text(ErrMessages[0])
-    //     $("#errDialog").show();
-    // }
-
     if(fieldErrors.length) {
         $("#errDialog .dialog-text").text(ErrMessages[0])
         $("#errDialog").show();
@@ -328,24 +303,24 @@ function addAndSaveBtnOnClickHandle(){
             case 'add':
                 addEmployee(JSON.stringify(employee))
                 break;
-            
+                
             case 'insert':
-                insertEmployee(JSON.stringify(employee),id)
-                console.log(id)
+                insertEmployee(JSON.stringify(employee),currentId)
             default:
                 break;
         }
+        resetForm()
     }
-    resetForm()
 }
 
 /**
- * 
- * author: QuangNV (08/12/2022) Lấy dữ liệu Đơn vị trong form thêm nhân viên
+ * Lấy dữ liệu Đơn vị trong form thêm nhân viên
+ * author: QuangNV (08/12/2022)
  */
 function getDepartments() {
     try {
         $("#employeeDepartment").empty();
+        $("#employeeDepartment").append(`<option value="">Chọn đơn vị</option>`);
         $.ajax({
             type: "GET",
             url: "https://amis.manhnv.net/api/v1/Departments",
@@ -362,12 +337,13 @@ function getDepartments() {
 }
 
 /**
- * 
- * author: QuangNV (08/12/2022) Lấy dữ liệu Đơn vị trong form thêm nhân viên
+ * Lấy dữ liệu Đơn vị trong form thêm nhân viên
+ * author: QuangNV (08/12/2022)
  */
 function getPositions() {
     try {
         $("#employeePosition").empty();
+        $("#employeePosition").append(`<option value="">Chọn chức danh</option>`);
         $.ajax({
             type: "GET",
             url: "https://amis.manhnv.net/api/v1/Positions",
@@ -384,8 +360,8 @@ function getPositions() {
 }
 
 /**
- * 
- * author: QuangNV (08/12/2022) xử lý hành động thêm nhân viên
+ * xử lý hành động thêm nhân viên
+ * author: QuangNV (08/12/2022) 
  */
 function addEmployee(data) {
     try {
@@ -396,11 +372,11 @@ function addEmployee(data) {
             contentType: "application/json;charset=utf-8",
             success: function (response) {
                 console.log(response)
+                fetchAllEmployees()
+                console.log("Thêm thành công")
             }
         });
         $("#addAndInsertForm").hide();
-        fetchAllEmployees()
-        console.log("Thêm thành công")
     } catch (error) {
         console.log(error)
     }
@@ -420,10 +396,10 @@ function insertEmployee(data, id) {
             contentType: "application/json;charset=utf-8",
             success: function (response) {
                 console.log(response)
+                $("#addAndInsertForm").hide();
+                fetchAllEmployees()
             }
         });
-        $("#addAndInsertForm").hide();
-        fetchAllEmployees()
     } catch (error) {
         console.log(error)
     }
@@ -447,18 +423,212 @@ function resetForm() {
     $("#email").val('');
 }
 
+/**
+ * Định dạng ngày tháng để hiển thị dữ liệu vào ô input
+ * Author: QuangNV (09/12/2022) 
+ */
 function bindingDate(date) {
-    date = new Date(date)
-    if(date.getDate() > 9) {
-        var day = date.getDate();
-    } else {
-        var day = '0' + date.getDate();
+    if(date) {
+        date = new Date(date)
+        if(date.getDate() > 9) {
+            var day = date.getDate();
+        } else {
+            var day = '0' + date.getDate();
+        }
+        if((date.getMonth() + 1) > 9) {
+            var month = (date.getMonth() + 1);
+        } else {
+            var month = '0' + (date.getMonth() + 1);
+        }
+        let yeah = date.getFullYear();
+        return yeah + '-' + month + '-' + day;
     }
-    if((date.getDate() + 1) > 9) {
-        var month = (date.getDate() + 1);
-    } else {
-        var month = '0' + (date.getDate() + 1);
+}
+
+ /**
+     * Các sự kiên liên quan đến dropdow
+     * Author: QuangNV (12/12/2022)
+*/
+ function handleDropdown() {
+    //Các sự kiện trên dropdown: Nhân bản, Xóa, Ngừng sử dụng
+    //Người dúng mở dropdown
+    $(document).on('click', '.m-dropdown-icon-emp', function () {
+        deleteId = $(this).parents('tr').data('value');
+        $('.m-dropdown-emp').css({
+            top: $(this).offset().top + 20,
+            left: $(this).offset().left + 40,
+        });
+        $('.m-dropdown-emp').show();
+
+        let empCode = $(this).parents('tr').find('.table-id').text();
+        console.log(empCode)
+        $('.m-delete-warning .dialog-text').text(`Bạn có thực sự muốn xóa Nhân viên <${empCode}> không?`);
+    });
+    // 2. Người dùng ẩn dropdown
+    $('body').click(function () {
+        $('.m-dropdown-emp').hide();
+    });
+    // 3. Người dùng chọn xóa nhân viên
+    $('.m-item-delete').click(function () {
+        $('.m-delete-warning').show();
+    });
+
+    // 4. Người dùng chọn có
+    $('#warningDialog .accept-btn').click(function() {
+        console.log('xóa')
+        try {
+            $.ajax({
+                type: "DELETE",
+                url: `https://amis.manhnv.net/api/v1/Employees/${deleteId}`,
+                success: function (response) {
+                    console.log('xóa thành công')
+                    $('.m-delete-warning').hide();
+                    fetchAllEmployees();
+                }
+            });
+        } catch (error) {
+            console.log(error)
+        }
+        
+    })
+
+    // 5. Người dùng chọn không
+    $('#warningDialog .cancel-btn').click(function() {
+        console.log('Ko xóa')
+        $('.m-delete-warning').hide();
+    })
+
+    $('#warningDialog .close-icon').click(function() {
+        console.log('Ko xóa')
+        $('.m-delete-warning').hide();
+    })
+}
+
+ /**
+     * Các sự kiên liên quan đến combobox
+     * Author: QuangNV (12/12/2022)
+*/
+function handleCombobox() {
+    //  Các sự kiện đóng mở combo box
+    let arrowElement = $('.m-icon-arrow-dropdown');
+    // 1. Mở và đóng combo box chọn số bản ghi
+    $('.m-select-record').click(function () {
+        let top = $(this).offset().top;
+        let left = $(this).offset().left;
+        $('.m-combo-dropdown-panel').css({
+            top: top - 170,
+            left: left - 169,
+            display: '',
+        });
+
+        if (arrowElement.hasClass('m-dropdown-close')) {
+            arrowElement.addClass('m-dropdown-open');
+            arrowElement.removeClass('m-dropdown-close');
+        } else {
+            arrowElement.addClass('m-dropdown-close');
+            arrowElement.removeClass('m-dropdown-open');
+            $('.m-combo-dropdown-panel').css({ display: 'none' });
+        }
+    });
+
+    // $('body').click(function () {
+    //     arrowElement.addClass('m-dropdown-close');
+    //     arrowElement.removeClass('m-dropdown-open');
+    //     $('.m-combo-dropdown-panel').css({ display: 'none' });
+    // });
+}
+
+/**
+ * logic xử lý sự kiện dblClick
+ * author: QuangNV(12/12/2022) 
+ */
+
+function dblClickHandle(e){
+    $("#addAndInsertForm").show();
+    action = 'insert';
+    currentId = $(this).data("value");
+    const fields = $("[property-name]");
+    try {
+        $("#addAndInsertForm .header-title").text("Thông tin nhân viên");
+        $.ajax({
+            type: "GET",
+            url: `https://amis.manhnv.net/api/v1/Employees/${currentId}`,
+            success: function (response) {
+                console.log(response)
+                for (const field of fields) {
+                    const propertyName = $(field).attr('property-name');
+                    if($(field).attr('type') == 'date') {
+                        $(field).val(bindingDate(response[propertyName]))
+                    } else if($(field).attr('id') == 'gender') {
+                        console.log('xử lý sau')
+                    } else {
+                        $(field).val(response[propertyName])
+                    }
+                }
+                // $("#addAndInsertForm .header-title").text("Thông tin nhân viên");
+                // $("#employeeCode").val(response.EmployeeCode);
+                // $("#employeeName").val(response.EmployeeName);
+                // $("#dob").val(bindingDate(response.DateOfBirth));
+                // // $("input[name='gender']:checked").val();
+                // // $("#employeeDepartment option:selected").val();
+                // $("#nationalId").val(response.IdentityNumber);
+                // // $("#employeePosition").val('05458d48-e7a0-11ec-9b48-00163e06abee');
+                // // $("#nationalIdDate").val(response.IdentityDate);
+                // $("#nationalIdPlace").val(response.IdentityPlace);
+                // $("#address").val(response.Address);
+                // $("#telephoneNumber").val(response.TelephoneNumber);
+                // $("#phoneNumber").val(response.PhoneNumber);
+                // $("#email").val(response.email);
+            }
+        });    
+    } catch (error) {
+        console.log(error)
     }
-    let yeah = date.getFullYear();
-    return yeah + '-' + month + '-' + day
+}
+
+/**
+ * logic xử lý sự kiện click nút sửa
+ * author: QuangNV(12/12/2022) 
+ */
+
+function insertClickHandle(e){
+    $("#addAndInsertForm").show();
+    action = 'insert';
+    currentId = $(this).parents('tr').data("value");
+    const fields = $("[property-name]");
+    try {
+        $("#addAndInsertForm .header-title").text("Thông tin nhân viên");
+        $.ajax({
+            type: "GET",
+            url: `https://amis.manhnv.net/api/v1/Employees/${currentId}`,
+            success: function (response) {
+                console.log(response)
+                for (const field of fields) {
+                    const propertyName = $(field).attr('property-name');
+                    if($(field).attr('type') == 'date') {
+                        $(field).val(bindingDate(response[propertyName]))
+                    } else if($(field).attr('id') == 'gender') {
+                        console.log('xử lý sau')
+                    } else {
+                        $(field).val(response[propertyName])
+                    }
+                }
+                // $("#employeeCode").val(response.EmployeeCode);
+                // $("#employeeName").val(response.EmployeeName);
+                // $("#dob").val(bindingDate(response.DateOfBirth));
+                // // $("input[name='gender']:checked").val();
+                // // $("#employeeDepartment option:selected").val();
+                // $("#nationalId").val(response.IdentityNumber);
+                // // $("#employeePosition").val('05458d48-e7a0-11ec-9b48-00163e06abee');
+                // // $("#nationalIdDate").val(response.IdentityDate);
+                // $("#nationalIdPlace").val(response.IdentityPlace);
+                // $("#address").val(response.Address);
+                // $("#telephoneNumber").val(response.TelephoneNumber);
+                // $("#phoneNumber").val(response.PhoneNumber);
+                // $("#email").val(response.email);
+            }
+        });    
+    } catch (error) {
+        console.log(error)
+    }
 }

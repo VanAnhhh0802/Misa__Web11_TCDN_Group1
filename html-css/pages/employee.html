@@ -171,6 +171,7 @@
                                         </th>
                                     </tr>
                                 </thead>
+    
                                 <tbody>
                                     
                                 </tbody>
@@ -180,12 +181,21 @@
                     <div class="page-paging">
                         <div class="total-record"></div>
                         <div class="right-paging">
-                            <div class="m-input dropdown">
-                                <select name="" id="" class="m-dropdown-select">
-                                  <option value="1" selected>10 bản ghi trên 1 trang</option>
-                                  <option value="2">20 bản ghi trên 1 trang</option>
-                                  <option value="3">30 bản ghi trên 1 trang</option>
-                                </select>
+                            <div class="m-record-in-page">
+                                <div class="m-combo-box">
+                                    <div class="m-combo-main-content">
+                                        <div class="m-selected-options">
+                                            <input type="text" class="m-combo-input" readonly="true"
+                                                autofocus="autofocus" value="10 bản ghi trên 1 trang" />
+                                        </div>
+                                        <div class="m-combo-action m-select-record">
+                                            <div class="m-btn-dropdown">
+                                                <div class="m-icon m-icon-16 m-icon-arrow-dropdown m-dropdown-close">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="pagination">
                                 <div class="page-btn disable-btn">trước</div>
@@ -257,7 +267,7 @@
                 <label for="" class="m-input-label">Đơn vị <div class="m-input-title-require">&nbsp;*</div></label>
                 <!-- <input type="text" class="m-input" id="employeeDepartment"> -->
                 <div class="dropdown" >
-                  <select name="" property-name="DepartmentId" id="employeeDepartment" class="m-input m-dropdown-select" m-required field-label="Mã nhân viên">
+                  <select name="" property-name="DepartmentId" id="employeeDepartment" class="m-input m-dropdown-select" m-required field-label="Đơn vị">
                     <option value="1" selected>10 bản ghi trên 1 trang</option>
                     <option value="2">20 bản ghi trên 1 trang</option>
                     <option value="3">30 bản ghi trên 1 trang</option>
@@ -393,7 +403,7 @@
 </div>
 
 <!-- Warning dialog -->
-<div class="dialog" id="warningDialog" >
+<div class="dialog m-delete-warning" id="warningDialog" >
   <div class="dialog-container">
     <div class="m-icon m-icon-16 dialog-close close-icon"></div>
     <div class="dialog-content">
@@ -401,7 +411,8 @@
       <div class="dialog-text">Content</div>
     </div>
     <div class="dialog-footer">
-      <button class="m-btn dialog-btn primary-btn accept-btn">Đồng ý</button>
+      <button class="m-btn dialog-btn primary-btn accept-btn" id="deleteEmployee">Có</button>
+      <button class="m-btn dialog-btn lower-btn cancel-btn">Không</button>
     </div>
   </div>
 </div>
@@ -419,6 +430,34 @@
     </div>
   </div>
 </div>
+
+<!-- dropdown xóa employee -->
+<div class="m-dropdown-menu m-dropdown-emp">
+  <ul class="m-dropdown-menu-items">
+      <li class="m-dropdown-item">
+          <a class="m-dropdown-item-link">Nhân bản</a>
+      </li>
+      <li class="m-dropdown-item m-item-delete">
+          <a class="m-dropdown-item-link">Xóa</a>
+      </li>
+      <li class="m-dropdown-item">
+          <a class="m-dropdown-item-link">Ngừng sử dụng</a>
+      </li>
+  </ul>
+</div>
+<!-- dropdown chọn số bản ghi trên 1 trang -->
+<div class="m-combo-dropdown-panel">
+  <div class="m-dropdown-body-container">
+      <ul class="m-combo-dropdown-items">
+          <li class="m-combo-box-item m-item-highlight">10 bản ghi trên 1 trang</li>
+          <li class="m-combo-box-item">20 bản ghi trên 1 trang</li>
+          <li class="m-combo-box-item">30 bản ghi trên 1 trang</li>
+          <li class="m-combo-box-item">50 bản ghi trên 1 trang</li>
+          <li class="m-combo-box-item">100 bản ghi trên 1 trang</li>
+      </ul>
+  </div>
+</div>
+
 <!-- loadding -->
 <div class="loading">
   <div class="loading-icon"></div>
