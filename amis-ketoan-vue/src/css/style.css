@@ -1,0 +1,85 @@
+@import url(./components/custom-scrollbar.css);
+@import url(./components/icon.css);
+@import url(./components/button.css);
+@import url(./components/comboBox.css);
+@import url(./components/dropdown.css);
+@import url(./components/input.css);
+@import url(./components/employee.css);
+@import url(./layout/header.css);
+@import url(./layout/sidebar.css);
+@import url(./components/table.css);
+@import url(./components/dialog.css);
+@import url(./components/form.css);
+@import url(./components/checkbox.css);
+@import url(./components/radio.css);
+@import url(./components/loading.css);
+
+@font-face {
+  font-family: notosans;
+  src: url(../assets/fonts/notosans-regular.2cb88a13.woff2);
+}
+@font-face {
+  font-family: notosans Italic;
+  src: url(../assets/fonts/notosans-italic.1c1aaac9.woff2);
+}
+@font-face {
+  font-family: notosans Bold;
+  src: url(../assets/fonts/notosans-bold.3ede5aff.woff2);
+}
+@font-face {
+  font-family: notosans Semibold;
+  src: url(../assets/fonts/notosans-semibold.df3e6dc4.woff2);
+}
+
+:root {
+  /* color */
+  /* button */
+  --primary-color: #1e90ff;
+  --hover-button-color: #ffffff;
+  --active-button-color: #ffffff;
+  --disable-button-color: #ffffff;
+  /* input */
+  --hint-text-color: #ffffff;
+  --border-color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: notosans;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  /* outline: none; */
+}
+
+body {
+  color: #111;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+.m-row {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.m-flex {
+  display: flex;
+}
+.m-margin-lr-16 {
+  margin: 0 16px;
+}
+
+.m-margin-lr-12 {
+  margin: 0 12px;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.m-p-10 {
+  padding: 10px;
+}

@@ -1,0 +1,95 @@
+/* body */
+.body {
+  display: flex;
+  height: calc(100vh - 56px);
+}
+
+.page {
+  width: calc(100% - 200px);
+  height: 100%;
+  background-color: #f1f1f1;
+  position: relative;
+  padding: 0 24px;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  padding: 24px 0;
+  align-items: center;
+}
+
+.page-header-title {
+  font-family: notosans Bold;
+  font-size: 24px;
+}
+
+.page-content {
+  background-color: #fff;
+  padding: 0 20px;
+  height: calc(100% - 80px);
+}
+
+.page-toolbar {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  justify-content: flex-end;
+}
+
+.m-icon.refresh-icon {
+  padding-right: 8px;
+}
+
+.page-table {
+  background-color: #fff;
+}
+
+.page-paging {
+  display: flex;
+  position: sticky;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  background-color: #fff;
+  z-index: 4;
+}
+
+.total-record {
+  font-size: 11px;
+}
+
+.total-record span {
+  font-family: notosans Bold;
+}
+
+.right-paging {
+  display: flex;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+}
+
+.page-btn {
+  height: 24px;
+  line-height: 24px;
+  border: 1px solid transparent;
+  text-align: center;
+  padding: 0 8px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.page-btn.active {
+  border: 1px solid #e6e6e6;
+}
+
+.page-btn.disable-btn {
+  cursor: default;
+}

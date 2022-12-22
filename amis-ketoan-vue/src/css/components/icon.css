@@ -1,0 +1,205 @@
+.m-icon {
+	background-image: url(../../assets/img/Sprites.64af8f61.svg);
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.m-icon-14 {
+	width: 14px;
+	height: 14px;
+}
+
+.m-icon-16 {
+	width: 16px;
+	height: 16px;
+}
+
+.m-icon-20 {
+	width: 20px;
+	height: 20px;
+}
+
+.m-icon-24 {
+	width: 24px;
+	height: 24px;
+}
+
+.m-icon-32 {
+	width: 32px;
+	height: 32px;
+}
+
+.m-icon-34 {
+	width: 34px;
+	height: 34px;
+}
+
+.m-icon-48 {
+	width: 48px;
+	height: 48px;
+}
+
+.m-input-icon {
+    position: absolute;
+	top: 50%;
+	transform: translate(0,-50%);
+    right: 8px;
+	background-color: #fff;
+}
+
+.refresh-icon {
+    background-position: -423px -201px;
+}
+
+.toggle-icon {
+    background-position: -424px -86px;
+}
+
+.branch-icon {
+    background-position: -80px -360px;
+    transform: rotate(90deg);
+}
+
+.notify-icon {
+    background-position: -788px -30px;
+    
+}
+
+
+.header-user-ava-icon {
+	background-position: -352px -894px;
+}
+
+.dropdown-icon {
+    background-position: -944px -360px;
+    width: 14px;
+    height: 14px;
+}
+
+.search-icon {
+    background-position: -992px -360px;
+}
+
+.menu-icon {
+	background-position: -844px -30px;
+}
+
+/* sidebar icon */
+
+.sidebar-dashboard-icon {
+	background-position: -30px -1628px;
+}
+
+
+.sidebar-cash-icon {
+    background-position: -73px -1585px;
+}
+
+
+.sidebar-bank-icon {
+	background-position: -117px -1628px;
+}
+
+
+.sidebar-buy-icon {
+	background-position: -161px -1628px;
+}
+
+
+.sidebar-sale-icon {
+	background-position: -204px -1628px;
+}
+
+
+.sidebar-invoice-icon {
+	background-position: -249px -1628px;
+}
+
+.sidebar-stock-icon {
+	background-position: -291px -1628px;
+}
+
+.sidebar-tools-icon {
+	background-position: -336px -1628px;;
+}
+
+.sidebar-fixed-assets-icon {
+	background-position: -378px -1630px;
+}
+
+/* .sidebar-salary-icon {
+	background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -467px -1659px;
+} */
+
+.sidebar-tax-icon {
+	background-position: -423px -1630px;
+}
+
+.sidebar-price-icon {
+	background-position: -467px -1628px;
+}
+
+/* .sidebar-loans-icon {
+	background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -636px -1661px;
+} */
+
+.sidebar-general-icon {
+	background-position: -510px -1628px;
+}
+
+.sidebar-budget-icon {
+	background-position: -378px -1659px;
+}
+
+.sidebar-report-icon {
+	background-position: -547px -1628px;
+}
+
+.sidebar-finance-icon {
+	background-position: -204px -1664px;
+}
+
+.sidebar-icon {
+	margin: 0 12px;
+}
+
+.collapse-icon {
+    background-position: -80px -360px;
+    transform: rotate(180deg);
+}
+
+.close-icon {
+	background-position: -144px -144px;
+}
+
+.help-icon {
+	background-position: -89px -144px;
+}
+
+.m-icon-checkbox-active {
+	background-position: -1224px -360px;
+}
+
+.m-dropdown-func-icon {
+	background-position: -896px -358px;
+}
+
+.err-icon {
+    background-position: -24px -954px;
+}
+
+.warning-icon {
+    background-position: -592px -457px;
+}
+
+.ok-icon {
+    background-position: -666px -456px;
+}
+
+.m-icon-arrow-down-blue {
+    background-position: -896px -359px;
+}
+
+.m-icon-arrow-dropdown {
+    background-position: -560px -359px;
+}
